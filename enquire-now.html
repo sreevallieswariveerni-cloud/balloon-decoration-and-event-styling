@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,547 +7,422 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Enquire Now | BalloonBliss</title>
+        <link rel="icon" type="image/png" sizes="184x184" href="logo-image-transparent.png">
+
+    <link rel="stylesheet" href="enquire-now.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Lucide -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Enquire Page CSS -->
-    <link rel="stylesheet" href="enquire-now.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- =================================
+         ENQUIRE PAGE
+    ================================= -->
 
-    <div id="header"></div>
+    <main class="enquire-page">
 
+        <!-- TOP RIGHT CONTROLS -->
 
+       <div class="enquire-controls">
 
+    <!-- RTL / LTR -->
+    <button
+        type="button"
+        class="control-btn"
+        id="direction-toggle"
+        aria-label="Toggle RTL and LTR">
 
-    <!-- ================= INTRO ================= -->
+        <i data-lucide="arrow-left-right"></i>
 
-    <section class="enquire-intro">
-
-        <div class="enquire-intro-inner">
-
-            <span class="section-tag">
-                EVENT ENQUIRY
-            </span>
-
-            <h2>
-                Tell us about your
-                <span>special day.</span>
-            </h2>
-
-            <p>
-                The more details you share, the better we can
-                understand your vision and prepare the perfect
-                decoration plan for your celebration.
-            </p>
-
-        </div>
-
-    </section>
+    </button>
 
 
-    <!-- ================= ENQUIRY AREA ================= -->
+    <!-- Dark / Light Mode -->
+    <button
+        type="button"
+        class="control-btn"
+        id="theme-toggle"
+        aria-label="Toggle dark mode">
 
-    <section class="enquire-section">
+        <i data-lucide="moon"></i>
 
-        <div class="enquire-wrapper">
+    </button>
+
+</div>
 
 
-            <!-- ================= LEFT INFO ================= -->
+        <!-- FORM CARD -->
 
-            <div class="enquire-info">
+        <section class="enquire-form-box">
 
-                <span class="enquire-info-label">
-                    START YOUR JOURNEY
+
+            <!-- LOGO + HEADING -->
+
+            <div class="enquire-form-heading">
+
+                <a href="index.html" class="enquire-logo">
+
+                    Balloon<span>Bliss</span>
+
+                </a>
+
+                <span class="enquire-eyebrow">
+                    ENQUIRY FORM
                 </span>
 
-                <h2>
-                    Your celebration,
-                    <span>your style.</span>
-                </h2>
+                <h1>
+                    Plan Your <em>Celebration</em>
+                </h1>
 
                 <p>
-                    Whether it is an intimate birthday, elegant
-                    wedding, baby shower or a corporate gathering,
-                    tell us what you have in mind.
+                    Fill in the details below and we'll get back to you soon.
                 </p>
-
-
-                <!-- STEP 1 -->
-
-                <div class="enquire-step">
-
-                    <div class="enquire-step-number">
-                        01
-                    </div>
-
-                    <div>
-                        <h3>
-                            Share Your Details
-                        </h3>
-
-                        <p>
-                            Tell us about your event, date and venue.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <!-- STEP 2 -->
-
-                <div class="enquire-step">
-
-                    <div class="enquire-step-number">
-                        02
-                    </div>
-
-                    <div>
-                        <h3>
-                            Choose Your Package
-                        </h3>
-
-                        <p>
-                            Select Basic, Standard or Premium.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <!-- STEP 3 -->
-
-                <div class="enquire-step">
-
-                    <div class="enquire-step-number">
-                        03
-                    </div>
-
-                    <div>
-                        <h3>
-                            Create Your Celebration
-                        </h3>
-
-                        <p>
-                            We'll connect with you to plan the details.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <!-- SMALL NOTE -->
-
-                <div class="enquire-note">
-
-                    <i data-lucide="sparkles"></i>
-
-                    <p>
-                        Have a completely custom idea?
-                        Don't worry — tell us about it in the
-                        message section.
-                    </p>
-
-                </div>
 
             </div>
 
 
-            <!-- ================= FORM ================= -->
 
-            <div class="enquire-form-box">
+            <!-- COMPLETE ENQUIRY FORM -->
 
-                <div class="enquire-form-heading">
-
-                    <span>
-                        ENQUIRY FORM
-                    </span>
-
-                    <h3>
-                        Plan your event
-                    </h3>
-
-                    <p>
-                        Fill in the details below and we'll
-                        get back to you soon.
-                    </p>
-
-                </div>
+            <form
+                class="enquiryForm"
+                id="enquiryForm">
 
 
-                <form id="enquiryForm">
+                <!-- NAME + PHONE -->
 
-
-                    <!-- NAME + PHONE -->
-
-                    <div class="enquire-form-row">
-
-                        <div class="enquire-form-group">
-
-                            <label for="enquireName">
-                                Full Name
-                            </label>
-
-                            <input
-                                type="text"
-                                id="enquireName"
-                                name="name"
-                                placeholder="Your name"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="enquire-form-group">
-
-                            <label for="enquirePhone">
-                                Phone Number
-                            </label>
-
-                            <input
-                                type="tel"
-                                id="enquirePhone"
-                                name="phone"
-                                placeholder="+91 98765 43210"
-                                required
-                            >
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- EMAIL + EVENT -->
-
-                    <div class="enquire-form-row">
-
-                        <div class="enquire-form-group">
-
-                            <label for="enquireEmail">
-                                Email Address
-                            </label>
-
-                            <input
-                                type="email"
-                                id="enquireEmail"
-                                name="email"
-                                placeholder="you@example.com"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="enquire-form-group">
-
-                            <label for="enquireEvent">
-                                Event Type
-                            </label>
-
-                            <select
-                                id="enquireEvent"
-                                name="event"
-                                required
-                            >
-
-                                <option value="">
-                                    Select event
-                                </option>
-
-                                <option value="Birthday">
-                                    Birthday
-                                </option>
-
-                                <option value="Wedding">
-                                    Wedding
-                                </option>
-
-                                <option value="Corporate Event">
-                                    Corporate Event
-                                </option>
-
-                                <option value="Baby Shower">
-                                    Baby Shower
-                                </option>
-
-                                <option value="Anniversary">
-                                    Anniversary
-                                </option>
-
-                                <option value="Custom Theme">
-                                    Custom Theme
-                                </option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- DATE + GUESTS -->
-
-                    <div class="enquire-form-row">
-
-                        <div class="enquire-form-group">
-
-                            <label for="enquireDate">
-                                Event Date
-                            </label>
-
-                            <input
-                                type="date"
-                                id="enquireDate"
-                                name="date"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="enquire-form-group">
-
-                            <label for="enquireGuests">
-                                Number of Guests
-                            </label>
-
-                            <input
-                                type="number"
-                                id="enquireGuests"
-                                name="guests"
-                                min="1"
-                                placeholder="Approx. guests"
-                            >
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- VENUE -->
+                <div class="enquire-form-row">
 
                     <div class="enquire-form-group">
 
-                        <label for="enquireVenue">
-                            Venue / Location
+                        <label for="enquireName">
+                            Full Name <span>*</span>
                         </label>
 
                         <input
                             type="text"
-                            id="enquireVenue"
-                            name="venue"
-                            placeholder="Enter your event venue"
-                        >
+                            id="enquireName"
+                            name="name"
+                            placeholder="Your name"
+                            required>
 
                     </div>
 
 
-                    <!-- PACKAGE -->
+                    <div class="enquire-form-group">
+
+                        <label for="enquirePhone">
+                            Phone Number <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="enquirePhone"
+                            name="phone"
+                            placeholder="+91 98765 43210"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EMAIL + EVENT TYPE -->
+
+                <div class="enquire-form-row">
 
                     <div class="enquire-form-group">
 
-                        <label for="enquirePackage">
-                            Preferred Package
+                        <label for="enquireEmail">
+                            Email Address <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="enquireEmail"
+                            name="email"
+                            placeholder="you@example.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="enquire-form-group">
+
+                        <label for="enquireEvent">
+                            Event Type <span>*</span>
                         </label>
 
                         <select
-                            id="enquirePackage"
-                            name="package"
-                            required
-                        >
+                            id="enquireEvent"
+                            name="event"
+                            required>
 
-                            <option value="">
-                                Select a package
+                            <option value="" disabled selected>
+                                Select event
                             </option>
 
-                            <option value="Basic">
-                                Basic
+                            <option value="Birthday Celebration">
+                                Birthday Celebration
                             </option>
 
-                            <option value="Standard">
-                                Standard
+                            <option value="Wedding Celebration">
+                                Wedding Celebration
                             </option>
 
-                            <option value="Premium">
-                                Premium
+                            <option value="Baby Shower">
+                                Baby Shower
+                            </option>
+
+                            <option value="Anniversary">
+                                Anniversary
+                            </option>
+
+                            <option value="Engagement">
+                                Engagement
+                            </option>
+
+                            <option value="Corporate Event">
+                                Corporate Event
+                            </option>
+
+                            <option value="Custom Theme">
+                                Custom Theme
                             </option>
 
                         </select>
 
                     </div>
 
+                </div>
 
-                    <!-- THEME -->
+
+
+                <!-- DATE + GUESTS -->
+
+                <div class="enquire-form-row">
 
                     <div class="enquire-form-group">
 
-                        <label for="enquireTheme">
-                            Preferred Theme / Colours
+                        <label for="enquireDate">
+                            Event Date <span>*</span>
                         </label>
 
                         <input
-                            type="text"
-                            id="enquireTheme"
-                            name="theme"
-                            placeholder="Example: Pink & white, floral, pastel..."
-                        >
+                            type="date"
+                            id="enquireDate"
+                            name="date"
+                            required>
 
                     </div>
 
-
-                    <!-- MESSAGE -->
 
                     <div class="enquire-form-group">
 
-                        <label for="enquireMessage">
-                            Additional Requirements
+                        <label for="enquireGuests">
+                            Number of Guests
                         </label>
 
-                        <textarea
-                            id="enquireMessage"
-                            name="message"
-                            rows="5"
-                            placeholder="Tell us about your decoration ideas or special requirements..."
-                        ></textarea>
+                        <input
+                            type="number"
+                            id="enquireGuests"
+                            name="guests"
+                            min="1"
+                            placeholder="Approx. guests">
 
                     </div>
 
-
-                    <!-- SUBMIT -->
-
-                    <button
-                        type="submit"
-                        class="enquire-submit"
-                    >
-
-                        Send Enquiry
-
-                        <i data-lucide="arrow-up-right"></i>
-
-                    </button>
+                </div>
 
 
-                    <!-- SUCCESS -->
 
-                    <div
-                        class="enquire-success"
-                        id="enquirySuccess"
-                    >
+                <!-- VENUE -->
 
-                        <i data-lucide="circle-check"></i>
+                <div class="enquire-form-group">
 
-                        <span>
-                            Thank you! Your enquiry has been received.
-                            We'll get in touch with you soon.
-                        </span>
+                    <label for="enquireVenue">
+                        Venue / Location <span>*</span>
+                    </label>
 
-                    </div>
+                    <input
+                        type="text"
+                        id="enquireVenue"
+                        name="venue"
+                        placeholder="Enter your event venue"
+                        required>
 
-                </form>
-
-            </div>
-
-        </div>
-
-    </section>
+                </div>
 
 
-    <!-- ================= CTA ================= -->
 
-    <section class="enquire-bottom">
+                <!-- PREFERRED PACKAGE -->
 
-        <div class="enquire-bottom-content">
+                <div class="enquire-form-group">
 
-            <span class="section-tag">
-                NEED HELP?
-            </span>
+                    <label for="enquirePackage">
+                        Preferred Package
+                    </label>
 
-            <h2>
-                Not sure which package
-                <span>is right for you?</span>
-            </h2>
+                    <select
+                        id="enquirePackage"
+                        name="package">
 
-            <p>
-                No problem. Tell us about your event and we'll
-                help you choose the right decoration package
-                for your celebration.
-            </p>
+                        <option value="" disabled selected>
+                            Select a package
+                        </option>
 
-            <a href="contact.html" class="enquire-contact-button">
-                Contact Us
+                        <option value="Basic">
+                            Basic
+                        </option>
 
-                <i data-lucide="arrow-up-right"></i>
-            </a>
+                        <option value="Standard">
+                            Standard
+                        </option>
 
-        </div>
+                        <option value="Premium">
+                            Premium
+                        </option>
 
-    </section>
+                        <option value="Custom Package">
+                            Custom Package
+                        </option>
 
+                    </select>
 
-    <!-- ================= FOOTER ================= -->
-
-    <div id="footer"></div>
-
-
-    <!-- ================= MAIN JS ================= -->
-
-    <script src="main.js"></script>
+                </div>
 
 
-    <!-- ================= FORM JS ================= -->
+
+                <!-- THEME / COLOURS -->
+
+                <div class="enquire-form-group">
+
+                    <label for="enquireTheme">
+                        Preferred Theme / Colours
+                    </label>
+
+                    <input
+                        type="text"
+                        id="enquireTheme"
+                        name="theme"
+                        placeholder="Example: Pink & white, floral, pastel...">
+
+                </div>
+
+
+
+                <!-- ADDITIONAL REQUIREMENTS -->
+
+                <div class="enquire-form-group">
+
+                    <label for="enquireRequirements">
+                        Additional Requirements
+                    </label>
+
+                    <textarea
+                        id="enquireRequirements"
+                        name="requirements"
+                        rows="5"
+                        placeholder="Tell us about your decoration ideas or special requirements..."></textarea>
+
+                </div>
+
+
+
+                <!-- SUBMIT BUTTON -->
+
+                <button
+                    type="submit"
+                    class="enquire-submit">
+
+                    Send Enquiry
+                    <span>↗</span>
+
+                </button>
+
+
+                <p class="enquire-form-note">
+                    We'll get back to you as soon as possible.
+                </p>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         RTL + DARK MODE
+    ================================= -->
 
     <script>
 
-        document.addEventListener("DOMContentLoaded", function () {
+        const body = document.body;
 
-            const form = document.getElementById("enquiryForm");
-            const success = document.getElementById("enquirySuccess");
+        const rtlToggle = document.getElementById("rtlToggle");
 
-            if (form) {
+        const themeToggle = document.getElementById("themeToggle");
 
-                form.addEventListener("submit", function (event) {
+        const themeIcon = document.getElementById("themeIcon");
 
-                    event.preventDefault();
 
-                    success.classList.add("show");
+        /* RTL TOGGLE */
 
-                    form.reset();
+        rtlToggle.addEventListener("click", function () {
 
-                    if (typeof lucide !== "undefined") {
-                        lucide.createIcons();
-                    }
+            body.classList.toggle("rtl-mode");
 
-                    setTimeout(function () {
-                        success.classList.remove("show");
-                    }, 6000);
+            const isRTL = body.classList.contains("rtl-mode");
 
-                });
+            document.documentElement.dir = isRTL ? "rtl" : "ltr";
 
-            }
+        });
+
+
+        /* DARK MODE TOGGLE */
+
+        themeToggle.addEventListener("click", function () {
+
+            body.classList.toggle("dark-mode");
+
+            const isDark = body.classList.contains("dark-mode");
+
+            themeIcon.textContent = isDark ? "☀" : "☾";
+
+        });
+
+
+        /* FORM SUBMIT */
+
+        const enquiryForm = document.getElementById("enquiryForm");
+
+        enquiryForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            alert("Thank you! Your enquiry has been received.");
 
         });
 
     </script>
 
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+<script src="main.js"></script>
+<script src="enquire-now.js"></script>
 </body>
 
 </html>

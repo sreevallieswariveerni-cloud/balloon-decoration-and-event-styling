@@ -157,7 +157,7 @@ img {
 .logo-balloon {
     font-family: "Playfair Display", serif;
 
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 600;
 
     color: var(--secondary-color);
@@ -170,7 +170,7 @@ img {
 
     font-family: "Great Vibes", cursive;
 
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
 
     color: var(--primary-color);
@@ -212,7 +212,8 @@ img {
 .nav-link {
     position: relative;
 
-    height: var(--header-height);
+    height: auto;
+padding: 10px 0;
 
     display: inline-flex;
     align-items: center;
@@ -228,6 +229,7 @@ img {
 
 /* Navigation underline */
 
+/* Navigation underline */
 .nav-link::after {
     content: "";
 
@@ -244,13 +246,13 @@ img {
     transition: width var(--transition);
 }
 
-.nav-link:hover {
-    color: var(--primary-color);
-}
-
 .nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
 }
 
 .nav-link.active {
@@ -450,7 +452,7 @@ img {
 .footer-logo .logo-balloon {
     font-family: "Playfair Display", serif;
 
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 600;
 
     color: #5A2748;
@@ -466,7 +468,7 @@ img {
 
     font-family: "Great Vibes", cursive;
 
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
 
     color: #B85C7A;
@@ -747,12 +749,12 @@ img {
     inset: 0;
 
     background: linear-gradient(
-        90deg,
-        rgba(255, 248, 250, 0.96) 0%,
-        rgba(255, 248, 250, 0.88) 35%,
-        rgba(255, 248, 250, 0.35) 62%,
-        rgba(255, 248, 250, 0.05) 100%
-    );
+    90deg,
+    rgba(255, 248, 250, 0.45) 0%,
+    rgba(255, 248, 250, 0.30) 35%,
+    rgba(255, 248, 250, 0.15) 62%,
+    rgba(255, 248, 250, 0.05) 100%
+);
 
     z-index: 0;
 }
@@ -1193,6 +1195,7 @@ img {
     border: 1px solid rgba(90, 39, 72, 0.12);
 
     border-radius: 12px;
+     text-align: center;
 }
 
 .testimonial-rating {
@@ -1215,13 +1218,13 @@ img {
 
 .testimonial-author {
     display: flex;
+    flex-direction: column;
     align-items: center;
-
+    justify-content: center;
     gap: 12px;
-
     padding-top: 18px;
-
     border-top: 1px solid rgba(90, 39, 72, 0.10);
+    text-align: center;
 }
 
 .author-image {
@@ -1464,11 +1467,11 @@ img {
     }
 
     .logo-balloon {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .logo-bliss {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     .logo-tagline {
@@ -2426,4 +2429,37 @@ body.dark-mode .mobile-menu-btn {
         text-decoration: none;
     }
 
+}
+/* =========================================
+   CTA BUTTON HOVER - ALL PAGES
+========================================= */
+
+.final-cta-content .btn-primary:hover,
+.home2-final-content .btn-primary:hover,
+.about-cta-content .btn-primary:hover,
+.services-cta-content .btn-primary:hover,
+.gallery-cta-content .btn-primary:hover {
+
+    background-color: #FFFFFF !important;
+
+    color: #5A2748 !important;
+
+    border: 1px solid #FFFFFF !important;
+
+    opacity: 1 !important;
+
+    transform: none !important;
+
+    box-shadow: none !important;
+}
+/* Testimonial Card Hover Effect */
+.testimonial-card {
+    border: 1px solid rgba(90, 39, 72, 0.12);
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(90, 39, 72, 0.10);
 }

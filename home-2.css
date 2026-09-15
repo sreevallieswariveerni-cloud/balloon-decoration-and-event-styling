@@ -139,22 +139,42 @@
 
 /* SECONDARY TEXT LINK */
 
+/* SECONDARY BUTTON */
 .premium-link {
     display: inline-flex;
-
     align-items: center;
-
+    justify-content: center;
     gap: 7px;
 
-    color: #FFFFFF;
+    padding: 12px 20px;
 
+    background-color: transparent;
+
+    color: var(--white);
+
+    border: 1px solid var(--white);
+
+    border-radius: 5px;
+
+    font-family: "Inter", sans-serif;
     font-size: 14px;
+    font-weight: 600;
 
-    font-weight: 500;
+    text-decoration: none;
 
-    border-bottom: 1px solid rgba(255,255,255,0.6);
+    transition:
+        background-color var(--transition),
+        color var(--transition),
+        border-color var(--transition);
+}
 
-    padding-bottom: 5px;
+/* HOVER */
+.premium-link:hover {
+    background-color: var(--white);
+
+    color: var(--secondary-color);
+
+    border-color: var(--white);
 }
 
 
@@ -725,82 +745,189 @@
     grid-row: span 2;
 }
 
-
-
-/* =========================================================
-   CUSTOMER EXPERIENCE
-========================================================= */
+/* =========================================
+   HOME 2 - NEW TESTIMONIAL DESIGN
+========================================= */
 
 .home2-testimonial {
-    padding: 50px 0;
-
-    background-color: var(--white);
+    padding: 100px 0;
+    background: #fff8fa;
 }
 
-.home2-testimonial-content {
-    max-width: 850px;
-
-    margin: 0 auto;
-
+.home2-testimonial .section-heading {
     text-align: center;
+    margin-bottom: 55px;
 }
 
-.home2-stars {
-    margin: 20px 0;
+.home2-testimonial .section-heading h2 span {
+    color: var(--primary-color);
+}
+
+
+/* GRID */
+
+.home2-testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* CARD */
+
+.home2-testimonial-card {
+    position: relative;
+
+    padding: 36px 32px;
+
+    background: #ffffff;
+
+    border: 1px solid #f0dce5;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* PINK LEFT ACCENT */
+
+.home2-testimonial-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 35px;
+    bottom: 35px;
+
+    width: 4px;
+
+    background: var(--primary-color);
+
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* QUOTE MARK */
+
+.quote-mark {
+    font-family: "Playfair Display", serif;
+
+    font-size: 70px;
+
+    line-height: 0.8;
 
     color: var(--primary-color);
 
-    font-size: 18px;
-
-    letter-spacing: 4px;
+    margin-bottom: 12px;
 }
 
-.home2-testimonial-content blockquote {
-    margin: 0 auto 30px;
 
-    font-family: "Playfair Display", serif;
+/* STARS */
 
-    font-size: 30px;
+.home2-stars {
+    color: var(--primary-color);
 
-    line-height: 1.55;
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 22px;
+}
+
+
+/* QUOTE */
+
+.home2-testimonial-card blockquote {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.9;
 
     color: var(--secondary-color);
 }
 
+
+/* CLIENT */
+
 .home2-client {
-    display: inline-flex;
+    display: flex;
+
     align-items: center;
 
     gap: 14px;
 
-    text-align: left;
+    margin-top: 30px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #f0dce5;
 }
 
-.home2-client > span {
-    width: 35px;
-    height: 1px;
 
-    background-color: var(--primary-color);
-}
+/* AVATAR */
 
-.home2-client strong {
-    display: block;
+.client-avatar {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #f8dce7;
 
     color: var(--secondary-color);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+}
+
+
+/* CLIENT TEXT */
+
+.client-info strong {
+    display: block;
 
     font-size: 14px;
-}
-
-.home2-client small {
-    display: block;
-
-    margin-top: 3px;
 
     color: var(--secondary-color);
+}
+
+.client-info small {
+    display: block;
+
+    margin-top: 5px;
 
     font-size: 12px;
 
-    opacity: 0.65;
+    color: #a4778d;
+}
+
+
+/* HOVER */
+
+.home2-testimonial-card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--primary-color);
+
+    box-shadow: 0 15px 35px rgba(90, 39, 72, 0.10);
 }
 
 

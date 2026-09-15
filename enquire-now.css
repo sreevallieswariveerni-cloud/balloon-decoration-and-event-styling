@@ -1,379 +1,175 @@
 
-/* ================= DECORATIVE CIRCLES ================= */
+/* =========================================
+   BALLOONBLISS ENQUIRE NOW PAGE
+========================================= */
 
-.enquire-hero-decoration {
-    position: absolute;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    border: 1px solid rgba(255,255,255,0.10);
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    background: #ffffff;
+    color: #5A2748;
+    font-family: "Inter", sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.enquire-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 38px 5% 70px;
+    background: #ffffff;
+    position: relative;
+}
+
+
+/* =========================================
+   TOP RIGHT BUTTONS
+========================================= */
+
+/* TOP RIGHT CONTROLS */
+
+.enquire-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* LUCIDE ICON BUTTON */
+
+.control-btn {
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid #dfc8d2;
     border-radius: 50%;
 
-    pointer-events: none;
-}
-
-.enquire-circle-one {
-    width: 500px;
-    height: 500px;
-
-    top: -280px;
-    left: -150px;
-
-    animation: enquireFloat 8s ease-in-out infinite;
-}
-
-.enquire-circle-two {
-    width: 650px;
-    height: 650px;
-
-    right: -330px;
-    bottom: -420px;
-
-    animation: enquireFloat 10s ease-in-out infinite reverse;
-}
-
-@keyframes enquireFloat {
-
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(25px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-
-}
-
-@keyframes enquireHeroReveal {
-
-    from {
-        opacity: 0;
-        transform: translateY(35px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-
-
-/* ================= INTRO ================= */
-
-.enquire-intro {
-    padding: 100px 20px 60px;
-
-    text-align: center;
-
-    background: #FFF8FA;
-}
-
-.enquire-intro-inner {
-    max-width: 800px;
-
-    margin: 0 auto;
-}
-
-.section-tag {
-    display: block;
-
-    margin-bottom: 14px;
-
-    color: var(--primary-color);
-
-    font-family: "Inter", sans-serif;
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 3px;
-}
-
-.enquire-intro h2 {
-    margin: 0 0 20px;
-
-    color: var(--secondary-color);
-
-    font-family: "Playfair Display", serif;
-
-    font-size: 48px;
-
-    font-weight: 500;
-
-    line-height: 1.2;
-}
-
-.enquire-intro h2 span {
-    color: var(--primary-color);
-
-    font-style: italic;
-}
-
-.enquire-intro p {
-    max-width: 680px;
-
-    margin: 0 auto;
-
-    color: #766570;
-
-    font-family: "Inter", sans-serif;
-
-    font-size: 15px;
-
-    line-height: 1.9;
-}
-
-
-/* ================= ENQUIRY SECTION ================= */
-
-.enquire-section {
-    padding: 50px 60px 110px;
-
-    background: #FFF8FA;
-}
-
-.enquire-wrapper {
-    width: 100%;
-
-    max-width: var(--container-width);
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: 0.82fr 1.18fr;
-
-    gap: 90px;
-
-    align-items: start;
-}
-
-
-/* ================= INFO ================= */
-
-.enquire-info {
-    padding-top: 20px;
-}
-
-.enquire-info-label {
-    display: block;
-
-    margin-bottom: 15px;
-
-    color: var(--primary-color);
-
-    font-family: "Inter", sans-serif;
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 3px;
-}
-
-.enquire-info h2 {
-    max-width: 500px;
-
-    margin: 0 0 20px;
-
-    color: var(--secondary-color);
-
-    font-family: "Playfair Display", serif;
-
-    font-size: 48px;
-
-    font-weight: 500;
-
-    line-height: 1.2;
-}
-
-.enquire-info h2 span {
-    color: var(--primary-color);
-
-    font-style: italic;
-}
-
-.enquire-info > p {
-    max-width: 470px;
-
-    margin: 0 0 40px;
-
-    color: #766570;
-
-    font-family: "Inter", sans-serif;
-
-    font-size: 14px;
-
-    line-height: 1.9;
-}
-
-
-/* ================= STEPS ================= */
-
-.enquire-step {
-    display: grid;
-
-    grid-template-columns: 48px 1fr;
-
-    gap: 18px;
-
-    padding: 23px 0;
-
-    border-bottom: 1px solid rgba(90,39,72,0.12);
-}
-
-.enquire-step:first-of-type {
-    border-top: 1px solid rgba(90,39,72,0.12);
-}
-
-.enquire-step-number {
-    width: 42px;
-    height: 42px;
+    background: #ffffff;
+    color: #5f2347;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
-    border: 1px solid rgba(184,92,122,0.4);
+    cursor: pointer;
 
-    border-radius: 50%;
-
-    color: var(--primary-color);
-
-    font-family: "Playfair Display", serif;
-
-    font-size: 13px;
+    transition: all 0.3s ease;
 }
 
-.enquire-step h3 {
-    margin: 0 0 5px;
 
-    color: var(--secondary-color);
+/* ICON SIZE */
 
-    font-family: "Playfair Display", serif;
-
-    font-size: 21px;
-
-    font-weight: 500;
+.control-btn svg {
+    width: 19px;
+    height: 19px;
+    stroke-width: 1.7;
 }
 
-.enquire-step p {
-    margin: 0;
 
-    color: #766570;
+/* HOVER */
 
+.control-btn:hover {
+    background: #c94f78;
+    border-color: #c94f78;
+    color: #ffffff;
+}
+.theme-btn {
     font-family: "Inter", sans-serif;
-
-    font-size: 12px;
-
-    line-height: 1.7;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 
-/* ================= NOTE ================= */
-
-.enquire-note {
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 13px;
-
-    margin-top: 30px;
-
-    padding: 18px;
-
-    background: rgba(184,92,122,0.07);
-
-    border-left: 3px solid var(--primary-color);
-}
-
-.enquire-note i {
-    width: 18px;
-    height: 18px;
-
-    flex-shrink: 0;
-
-    color: var(--primary-color);
-}
-
-.enquire-note p {
-    margin: 0;
-
-    color: #766570;
-
-    font-family: "Inter", sans-serif;
-
-    font-size: 12px;
-
-    line-height: 1.7;
-}
-
-
-/* ================= FORM BOX ================= */
+/* =========================================
+   FORM CARD
+========================================= */
 
 .enquire-form-box {
-    padding: 48px;
-
-    background: var(--white);
-
-    border: 1px solid rgba(90,39,72,0.10);
-
-    box-shadow: 0 20px 60px rgba(90,39,72,0.08);
+    width: 100%;
+    max-width: 1100px;
+    margin: -24px auto 0;
+    padding: 65px 40px 45px;
+    background: #ffffff;
+    border: 1px solid #e1dce2;
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(90, 39, 72, 0.04);
 }
+
+
+/* =========================================
+   LOGO + HEADING
+========================================= */
 
 .enquire-form-heading {
-    margin-bottom: 35px;
+    text-align: center;
+    margin-bottom: 38px;
 }
 
-.enquire-form-heading > span {
+.enquire-logo {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 18px;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #5A2748;
+}
+
+.enquire-logo span {
+    color: #c94f78;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+}
+
+.enquire-eyebrow {
     display: block;
-
-    margin-bottom: 10px;
-
-    color: var(--primary-color);
-
+    margin-bottom: 12px;
+    color: #c94f78;
     font-family: "Inter", sans-serif;
-
     font-size: 10px;
-
     font-weight: 700;
-
     letter-spacing: 2.5px;
 }
 
-.enquire-form-heading h3 {
-    margin: 0 0 9px;
-
-    color: var(--secondary-color);
-
+.enquire-form-heading h1 {
+    margin: 0 0 12px;
+    color: #5A2748;
     font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+}
 
-    font-size: 32px;
-
-    font-weight: 500;
+.enquire-form-heading h1 em {
+    color: #c94f78;
+    font-style: italic;
 }
 
 .enquire-form-heading p {
     margin: 0;
-
-    color: #8A7881;
-
+    color: #8a7881;
     font-family: "Inter", sans-serif;
-
     font-size: 13px;
-
     line-height: 1.7;
 }
 
 
-/* ================= FORM ================= */
+/* =========================================
+   FORM ROW
+========================================= */
 
 .enquiryForm {
     width: 100%;
@@ -381,542 +177,330 @@
 
 .enquire-form-row {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
-    gap: 20px;
+    gap: 24px;
 }
 
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
 .enquire-form-group {
-    margin-bottom: 21px;
+    width: 100%;
+    margin-bottom: 22px;
 }
 
 .enquire-form-group label {
     display: block;
-
-    margin-bottom: 8px;
-
-    color: var(--secondary-color);
-
+    margin-bottom: 9px;
+    color: #5A2748;
     font-family: "Inter", sans-serif;
-
-    font-size: 11px;
-
+    font-size: 12px;
     font-weight: 600;
 }
+
+.enquire-form-group label span {
+    color: #c94f78;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
 
 .enquire-form-group input,
 .enquire-form-group select,
 .enquire-form-group textarea {
     width: 100%;
-
-    box-sizing: border-box;
-
-    border: 1px solid rgba(90,39,72,0.16);
-
-    border-radius: 0;
-
+    border: 1px solid #e5d3dc;
+    border-radius: 10px;
     outline: none;
-
-    background: var(--white);
-
-    color: var(--secondary-color);
-
+    background: #ffffff;
+    color: #5A2748;
     font-family: "Inter", sans-serif;
-
     font-size: 13px;
-
-    transition:
-        border-color var(--transition),
-        box-shadow var(--transition);
+    transition: all 0.3s ease;
 }
 
 .enquire-form-group input,
 .enquire-form-group select {
-    height: 48px;
-
-    padding: 0 15px;
+    height: 56px;
+    padding: 0 16px;
 }
 
 .enquire-form-group textarea {
-    min-height: 125px;
-
-    padding: 14px 15px;
-
+    min-height: 135px;
+    padding: 16px;
     resize: vertical;
-
     line-height: 1.7;
 }
 
 .enquire-form-group input::placeholder,
 .enquire-form-group textarea::placeholder {
-    color: #B2A5AB;
+    color: #a996a2;
+}
+
+.enquire-form-group select {
+    cursor: pointer;
 }
 
 .enquire-form-group input:focus,
 .enquire-form-group select:focus,
 .enquire-form-group textarea:focus {
-    border-color: var(--primary-color);
-
-    box-shadow:
-        0 0 0 3px rgba(184,92,122,0.08);
+    border-color: #c94f78;
+    box-shadow: 0 0 0 3px rgba(201, 79, 120, 0.08);
 }
 
 
-/* ================= SUBMIT ================= */
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
 
 .enquire-submit {
     width: 100%;
-
-    min-height: 52px;
-
+    min-height: 54px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    background: #c94f78;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
     display: flex;
-
     align-items: center;
     justify-content: center;
-
-    gap: 10px;
-
-    margin-top: 5px;
-
-    border: 1px solid var(--secondary-color);
-
-    background: var(--secondary-color);
-
-    color: var(--white);
-
-    cursor: pointer;
-
-    font-family: "Inter", sans-serif;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    transition: var(--transition);
+    gap: 12px;
+    transition: all 0.3s ease;
 }
 
-.enquire-submit i {
-    width: 17px;
-    height: 17px;
-
-    transition: var(--transition);
+.enquire-submit span {
+    font-size: 22px;
+    line-height: 1;
 }
 
 .enquire-submit:hover {
-    background: var(--primary-color);
-
-    border-color: var(--primary-color);
+    background: #a93d62;
+    transform: translateY(-1px);
 }
 
-.enquire-submit:hover i {
-    transform: translate(3px, -3px);
-}
-
-
-/* ================= SUCCESS ================= */
-
-.enquire-success {
-    display: none;
-
-    align-items: flex-start;
-
-    gap: 10px;
-
-    margin-top: 18px;
-
-    padding: 14px 15px;
-
-    background: #FFF3F6;
-
-    border-left: 3px solid var(--primary-color);
-
-    color: var(--secondary-color);
-
-    font-family: "Inter", sans-serif;
-
-    font-size: 12px;
-
-    line-height: 1.6;
-}
-
-.enquire-success.show {
-    display: flex;
-}
-
-.enquire-success i {
-    width: 17px;
-    height: 17px;
-
-    flex-shrink: 0;
-
-    color: var(--primary-color);
-}
-
-
-/* ================= BOTTOM CTA ================= */
-
-.enquire-bottom {
-    padding: 105px 20px;
-
+.enquire-form-note {
+    margin-top: 16px;
+    color: #a996a2;
+    font-size: 11px;
     text-align: center;
-
-    background: var(--secondary-color);
-}
-
-.enquire-bottom-content {
-    max-width: 750px;
-
-    margin: 0 auto;
-}
-
-.enquire-bottom .section-tag {
-    color: #F3A1B9;
-}
-
-.enquire-bottom h2 {
-    margin: 18px 0;
-
-    color: var(--white);
-
-    font-family: "Playfair Display", serif;
-
-    font-size: 48px;
-
-    font-weight: 500;
-
-    line-height: 1.2;
-}
-
-.enquire-bottom h2 span {
-    color: #F3A1B9;
-
-    font-style: italic;
-}
-
-.enquire-bottom p {
-    max-width: 600px;
-
-    margin: 0 auto 30px;
-
-    color: rgba(255,255,255,0.75);
-
-    font-family: "Inter", sans-serif;
-
-    font-size: 14px;
-
-    line-height: 1.8;
-}
-
-.enquire-contact-button {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 9px;
-
-    padding: 15px 27px;
-
-    background: var(--white);
-
-    color: var(--secondary-color);
-
-    text-decoration: none;
-
-    font-family: "Inter", sans-serif;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    transition: var(--transition);
-}
-
-.enquire-contact-button i {
-    width: 16px;
-    height: 16px;
-}
-
-.enquire-contact-button:hover {
-    background: var(--primary-color);
-
-    color: var(--white);
 }
 
 
-/* =========================================================
-   1024px
-   ========================================================= */
+/* =========================================
+   RTL MODE
+========================================= */
 
-@media (max-width: 1024px) {
+body.rtl-mode {
+    direction: rtl;
+}
 
-    .enquire-hero {
-        min-height: 450px;
-    }
+body.rtl-mode .enquire-form-heading,
+body.rtl-mode .enquire-form-group,
+body.rtl-mode .enquire-form-note {
+    text-align: right;
+}
 
-    .enquire-hero h1 {
-        font-size: 56px;
-    }
+body.rtl-mode .enquire-form-heading {
+    text-align: center;
+}
 
-    .enquire-section {
-        padding: 45px 35px 90px;
-    }
+body.rtl-mode .enquire-controls {
+    direction: ltr;
+}
 
-    .enquire-wrapper {
-        gap: 50px;
-    }
-
-    .enquire-info h2 {
-        font-size: 42px;
-    }
-
-    .enquire-form-box {
-        padding: 38px 30px;
-    }
-
-    .enquire-bottom h2 {
-        font-size: 43px;
-    }
-
+body.rtl-mode .enquire-form-row {
+    direction: rtl;
 }
 
 
-/* =========================================================
-   768px
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    .enquire-hero {
-        min-height: 400px;
-    }
-
-    .enquire-hero h1 {
-        font-size: 48px;
-    }
-
-    .enquire-hero p {
-        font-size: 14px;
-    }
-
-    .enquire-intro {
-        padding: 75px 20px 50px;
-    }
-
-    .enquire-intro h2 {
-        font-size: 40px;
-    }
-
-    .enquire-section {
-        padding: 40px 25px 75px;
-    }
-
-    .enquire-wrapper {
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-
-        max-width: 600px;
-    }
-
-    .enquire-info {
-        padding-top: 0;
-    }
-
-    .enquire-info h2 {
-        font-size: 42px;
-    }
-
-    .enquire-form-box {
-        padding: 35px 28px;
-    }
-
-    .enquire-bottom {
-        padding: 80px 25px;
-    }
-
-    .enquire-bottom h2 {
-        font-size: 40px;
-    }
-
-}
-
-
-/* =========================================================
-   360px
-   ========================================================= */
-
-@media (max-width: 360px) {
-
-    .enquire-hero {
-        min-height: 350px;
-    }
-
-    .enquire-hero-content {
-        padding: 30px 15px;
-    }
-
-    .enquire-label {
-        font-size: 10px;
-
-        letter-spacing: 3px;
-    }
-
-    .enquire-hero h1 {
-        font-size: 39px;
-    }
-
-    .enquire-hero p {
-        font-size: 13px;
-
-        line-height: 1.7;
-    }
-
-    .enquire-intro {
-        padding: 60px 15px 40px;
-    }
-
-    .enquire-intro h2 {
-        font-size: 34px;
-    }
-
-    .enquire-intro p {
-        font-size: 13px;
-    }
-
-    .enquire-section {
-        padding: 35px 15px 60px;
-    }
-
-    .enquire-info h2 {
-        font-size: 34px;
-    }
-
-    .enquire-info > p {
-        font-size: 13px;
-    }
-
-    .enquire-step {
-        grid-template-columns: 42px 1fr;
-
-        gap: 13px;
-    }
-
-    .enquire-step h3 {
-        font-size: 19px;
-    }
-
-    .enquire-step p {
-        font-size: 11px;
-    }
-
-    .enquire-form-box {
-        padding: 28px 20px;
-    }
-
-    .enquire-form-heading h3 {
-        font-size: 27px;
-    }
-
-    .enquire-form-row {
-        grid-template-columns: 1fr;
-
-        gap: 0;
-    }
-
-    .enquire-form-group {
-        margin-bottom: 18px;
-    }
-
-    .enquire-bottom {
-        padding: 65px 15px;
-    }
-
-    .enquire-bottom h2 {
-        font-size: 34px;
-    }
-
-    .enquire-bottom p {
-        font-size: 13px;
-    }
-
-    .enquire-contact-button {
-        width: 100%;
-
-        box-sizing: border-box;
-    }
-
-}
-
-
-/* =========================================================
+/* =========================================
    DARK MODE
-   ========================================================= */
+========================================= */
 
-body.dark-mode .enquire-intro,
-body.dark-mode .enquire-section {
-    background: #1E1620;
+body.dark-mode {
+    background: #1e1620;
+    color: #ffffff;
 }
 
-body.dark-mode .enquire-intro h2,
-body.dark-mode .enquire-info h2 {
-    color: var(--white);
-}
-
-body.dark-mode .enquire-intro p,
-body.dark-mode .enquire-info > p,
-body.dark-mode .enquire-step p,
-body.dark-mode .enquire-note p {
-    color: #C8B9C1;
-}
-
-body.dark-mode .enquire-step {
-    border-color: rgba(255,255,255,0.10);
-}
-
-body.dark-mode .enquire-step h3 {
-    color: var(--white);
-}
-
-body.dark-mode .enquire-note {
-    background: rgba(184,92,122,0.10);
-
-    border-left-color: var(--primary-color);
+body.dark-mode .enquire-page {
+    background: #1e1620;
 }
 
 body.dark-mode .enquire-form-box {
-    background: #241A25;
-
-    border-color: rgba(255,255,255,0.08);
+    background: #241a25;
+    border-color: #4a3544;
+    box-shadow: none;
 }
 
-body.dark-mode .enquire-form-heading h3,
-body.dark-mode .enquire-form-group label {
-    color: var(--white);
+body.dark-mode .control-btn {
+    background: #241a25;
+    border-color: #6b4a5c;
+    color: #ffffff;
+}
+
+body.dark-mode .control-btn:hover {
+    background: #c94f78;
+    border-color: #c94f78;
+}
+
+body.dark-mode .enquire-logo {
+    color: #ffffff;
+}
+
+body.dark-mode .enquire-logo span {
+    color: #e17b9b;
+}
+
+body.dark-mode .enquire-form-heading h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .enquire-form-heading h1 em {
+    color: #e17b9b;
 }
 
 body.dark-mode .enquire-form-heading p {
-    color: #C8B9C1;
+    color: #c8b9c1;
+}
+
+body.dark-mode .enquire-form-group label {
+    color: #ffffff;
 }
 
 body.dark-mode .enquire-form-group input,
 body.dark-mode .enquire-form-group select,
 body.dark-mode .enquire-form-group textarea {
-    background: #1E1620;
-
-    border-color: rgba(255,255,255,0.14);
-
-    color: var(--white);
+    background: #1e1620;
+    border-color: #4a3544;
+    color: #ffffff;
 }
 
 body.dark-mode .enquire-form-group input::placeholder,
 body.dark-mode .enquire-form-group textarea::placeholder {
-    color: #8E7D88;
+    color: #8e7d88;
 }
 
-body.dark-mode .enquire-success {
-    background: #30232F;
+body.dark-mode .enquire-form-note {
+    color: #8e7d88;
+}
 
-    color: var(--white);
+
+/* =========================================
+   1024px
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .enquire-page {
+        padding: 30px 3% 60px;
+    }
+
+    .enquire-form-box {
+        padding: 55px 32px 40px;
+    }
+
+}
+
+
+/* =========================================
+   768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    .enquire-page {
+        padding: 20px 20px 45px;
+    }
+
+    .enquire-controls {
+        margin-bottom: 0;
+    }
+
+    .enquire-form-box {
+        margin-top: -18px;
+        padding: 45px 25px 35px;
+        border-radius: 20px;
+    }
+
+    .enquire-form-heading h1 {
+        font-size: 30px;
+    }
+
+    .enquire-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .enquire-form-group {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/* =========================================
+   480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    .enquire-page {
+        padding: 15px 12px 35px;
+    }
+
+    .enquire-controls {
+        gap: 8px;
+    }
+
+    .control-btn {
+        width: 44px;
+        height: 40px;
+    }
+
+    .enquire-form-box {
+        margin-top: -15px;
+        padding: 35px 18px 25px;
+        border-radius: 16px;
+    }
+
+    .enquire-logo {
+        font-size: 25px;
+    }
+
+    .enquire-form-heading h1 {
+        font-size: 27px;
+    }
+
+    .enquire-form-heading p {
+        font-size: 12px;
+    }
+
+    .enquire-form-group input,
+    .enquire-form-group select {
+        height: 52px;
+    }
+
+    .enquire-submit {
+        min-height: 52px;
+    }
+
+}
+body.dark-mode .control-btn {
+    background: #241a25;
+    border-color: #6b4a5c;
+    color: #ffffff;
+}
+
+body.dark-mode .control-btn:hover {
+    background: #c94f78;
+    border-color: #c94f78;
+    color: #ffffff;
 }

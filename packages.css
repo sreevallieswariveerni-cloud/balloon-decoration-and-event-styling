@@ -194,16 +194,18 @@
 
 /* ================= FEATURED CARD ================= */
 
+/* STANDARD - SPECIAL BORDER */
+
 .package-featured {
-    background: #5A2748;
-    border-color: #5A2748;
+    background: #ffffff;
+    border: 2px solid #c94f78;
+    color: #5A2748;
     transform: translateY(-12px);
 }
 
 .package-featured:hover {
     transform: translateY(-22px);
 }
-
 
 /* ================= POPULAR BADGE ================= */
 
@@ -256,7 +258,7 @@
 }
 
 .package-featured h3 {
-    color: #FFFFFF;
+    color: #5A2748;
 }
 
 .package-description {
@@ -271,7 +273,7 @@
 }
 
 .package-featured .package-description {
-    color: rgba(255, 255, 255, 0.78);
+     color: #766570;
 }
 
 
@@ -303,11 +305,11 @@
 }
 
 .package-featured .package-price {
-    color: #FFFFFF;
+    color: #5A2748;
 }
 
 .package-featured .package-price span {
-    color: rgba(255, 255, 255, 0.65);
+    color: #A08E98;
 }
 
 
@@ -323,7 +325,7 @@
 }
 
 .package-featured .package-divider {
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(90, 39, 72, 0.12);
 }
 
 
@@ -342,7 +344,7 @@
 }
 
 .package-featured .package-features h4 {
-    color: #FFFFFF;
+     color: #5A2748;
 }
 
 .package-features ul {
@@ -384,7 +386,7 @@
 }
 
 .package-featured .package-features li i {
-    color: #F3A1B9;
+    color: #B85C7A;
 }
 
 
@@ -931,4 +933,128 @@ body.dark-mode .package-featured .package-button:hover {
     background: #C96A8A;
     color: #FFFFFF;
     border-color: #C96A8A;
+}
+/* STANDARD CARD - FIX TEXT VISIBILITY */
+
+.package-featured {
+    background: #ffffff;
+    border: 2px solid #c94f78;
+    color: #5A2748;
+}
+
+/* Package Includes heading */
+.package-featured .package-features h4 {
+    color: #5A2748 !important;
+}
+
+/* Features text */
+.package-featured .package-features li {
+    color: #6F5965 !important;
+}
+
+/* Check icons */
+.package-featured .package-features li i {
+    color: #8B6074 !important;
+}
+
+/* Price */
+.package-featured .package-price {
+    color: #5A2748 !important;
+}
+
+/* Description */
+.package-featured .package-description {
+    color: #766570 !important;
+}
+
+/* Divider */
+.package-featured .package-divider {
+    background: #ead6df !important;
+}
+/* =========================================
+   DARK MODE - PACKAGE CARDS
+========================================= */
+
+body.dark-mode .package-card {
+    background: #241a23;
+    border-color: #4a3544;
+    color: #ffffff;
+}
+
+/* STANDARD CARD - SPECIAL BORDER */
+
+body.dark-mode .package-featured {
+    background: #241a23;
+    border: 2px solid #c94f78;
+    color: #ffffff;
+}
+
+/* Headings */
+
+body.dark-mode .package-card h3,
+body.dark-mode .package-featured h3 {
+    color: #ffffff !important;
+}
+
+/* Description */
+
+body.dark-mode .package-card .package-description,
+body.dark-mode .package-featured .package-description {
+    color: #d8c5cf !important;
+}
+
+/* Starting From */
+
+body.dark-mode .package-card .package-price span,
+body.dark-mode .package-featured .package-price span {
+    color: #cbb3c0 !important;
+}
+
+/* Prices */
+
+body.dark-mode .package-card .package-price,
+body.dark-mode .package-featured .package-price {
+    color: #ffffff !important;
+}
+
+/* Package Includes */
+
+body.dark-mode .package-card .package-features h4,
+body.dark-mode .package-featured .package-features h4 {
+    color: #ffffff !important;
+}
+
+/* Features Text */
+
+body.dark-mode .package-card .package-features li,
+body.dark-mode .package-featured .package-features li {
+    color: #e0d1d9 !important;
+}
+
+/* Check Icons */
+
+body.dark-mode .package-card .package-features li i,
+body.dark-mode .package-featured .package-features li i {
+    color: #e8b3c6 !important;
+}
+
+/* Divider */
+
+body.dark-mode .package-card .package-divider,
+body.dark-mode .package-featured .package-divider {
+    background: #4a3544 !important;
+}
+
+/* Buttons */
+
+body.dark-mode .package-card .package-btn,
+body.dark-mode .package-featured .package-btn {
+    background: #c94f78;
+    color: #ffffff !important;
+}
+
+body.dark-mode .package-card .package-btn:hover,
+body.dark-mode .package-featured .package-btn:hover {
+    background: #e17b9b;
+    color: #ffffff !important;
 }
