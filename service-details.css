@@ -1,0 +1,2069 @@
+/* =========================================================
+   SERVICE DETAILS PAGE
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.details-hero {
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: flex-end;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(90, 39, 72, 0.95),
+            rgba(90, 39, 72, 0.25)
+        ),
+        url("https://i.pinimg.com/1200x/63/ad/26/63ad26d642cf02337fe3d1e3cbf2f624.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.details-hero-content {
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 80px 0;
+
+    color: var(--white);
+
+}
+
+
+.details-label {
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+}
+
+
+.details-hero h1 {
+
+    max-width: 850px;
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 1.02;
+
+    font-weight: 500;
+
+    color: var(--white);
+
+}
+
+
+.details-hero h1 span {
+
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+
+    font-weight: 400;
+
+    color: var(--primary-color);
+
+}
+
+
+.details-hero p {
+
+    max-width: 650px;
+
+    margin: 25px 0 0;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: var(--white);
+
+}
+
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.details-intro {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 110px 20px 100px;
+
+    text-align: center;
+
+}
+
+
+.details-intro h2 {
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    color: var(--secondary-color);
+
+}
+
+
+.details-intro h2 span {
+
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+
+    color: var(--primary-color);
+
+}
+
+
+.details-intro p {
+
+    max-width: 700px;
+
+    margin: 25px auto 0;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: var(--secondary-color);
+
+}
+
+
+
+/* =========================================================
+   COMMON SERVICE
+========================================================= */
+
+.detail-service {
+
+    min-height: 680px;
+
+    position: relative;
+
+    display: grid;
+
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+
+.detail-service-image {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+
+.detail-service-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(90, 39, 72, 0.95),
+            rgba(90, 39, 72, 0.35),
+            rgba(90, 39, 72, 0.05)
+        );
+
+}
+
+
+.detail-service-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.detail-service-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 100px 0;
+
+    color: var(--white);
+
+}
+
+
+.service-number {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+    color: var(--primary-color);
+
+}
+
+
+.service-label {
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: var(--primary-color);
+
+}
+
+
+.detail-service-content h2 {
+
+    max-width: 600px;
+
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 6vw, 78px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    color: var(--white);
+
+}
+
+
+.detail-service-content h2 span {
+
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+
+    font-weight: 400;
+
+    color: var(--primary-color);
+
+}
+
+
+.detail-service-content p {
+
+    max-width: 650px;
+
+    margin-bottom: 18px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--white);
+
+}
+
+
+.service-features {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+}
+
+
+.service-features span {
+
+    padding: 10px 16px;
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    color: var(--white);
+
+}
+
+
+
+/* =========================================================
+   WEDDING
+========================================================= */
+
+.wedding-service {
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    padding: 110px 8%;
+
+    background: #FFF8FA;
+
+}
+
+
+.service-visual {
+
+    position: relative;
+
+    height: 620px;
+
+}
+
+
+.service-visual img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 260px 260px 20px 20px;
+
+}
+
+
+.visual-number {
+
+    position: absolute;
+
+    top: 25px;
+    right: 25px;
+
+    z-index: 2;
+
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--secondary-color);
+
+    color: var(--white);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+}
+
+
+.service-text {
+
+    max-width: 600px;
+
+}
+
+
+.service-text h2 {
+
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    color: var(--secondary-color);
+
+}
+
+
+.service-text h2 span {
+
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+
+    color: var(--primary-color);
+
+}
+
+
+.service-text p {
+
+    margin-bottom: 18px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--secondary-color);
+
+}
+
+
+.service-list {
+
+    margin: 30px 0 0;
+
+    padding: 0;
+
+    list-style: none;
+
+}
+
+
+.service-list li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+
+    color: var(--secondary-color);
+
+}
+
+
+.service-list svg {
+
+    width: 18px;
+    height: 18px;
+
+    color: var(--primary-color);
+
+}
+
+
+
+/* =========================================================
+   CORPORATE
+========================================================= */
+
+.corporate-service {
+
+    min-height: 720px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--secondary-color);
+
+}
+
+
+.corporate-background {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+
+.corporate-background::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(90, 39, 72, 0.98),
+            rgba(90, 39, 72, 0.65),
+            rgba(90, 39, 72, 0.20)
+        );
+
+}
+
+
+.corporate-background img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.corporate-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 130px 0;
+
+    color: var(--white);
+
+}
+
+
+.corporate-content h2 {
+
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 6vw, 80px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    color: var(--white);
+
+}
+
+
+.corporate-content h2 span {
+
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+
+    color: var(--primary-color);
+
+}
+
+
+.corporate-content p {
+
+    max-width: 650px;
+
+    margin-bottom: 18px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--white);
+
+}
+
+
+.corporate-points {
+
+    max-width: 700px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 40px;
+
+}
+
+
+.corporate-points div {
+
+    padding: 20px 15px;
+
+    border-top: 1px solid rgba(255,255,255,0.35);
+
+}
+
+
+.corporate-points strong {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--primary-color);
+
+}
+
+
+.corporate-points span {
+
+    font-size: 12px;
+
+    color: var(--white);
+
+}
+
+
+
+/* =========================================================
+   BABY SHOWER
+========================================================= */
+
+.baby-service {
+
+    padding: 120px 8%;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    grid-template-areas:
+        "heading image"
+        "description image";
+
+    column-gap: 70px;
+    row-gap: 35px;
+
+    align-items: center;
+
+    background: #FFF8FA;
+
+}
+
+
+.baby-heading {
+
+    grid-area: heading;
+
+    padding-top: 0;
+
+}
+
+
+.baby-heading h2 {
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    color: var(--secondary-color);
+
+}
+
+
+.baby-heading h2 span {
+
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+
+    color: var(--primary-color);
+
+}
+
+
+.baby-image {
+
+    grid-area: image;
+
+    height: 450px;
+
+    overflow: hidden;
+
+}
+
+
+.baby-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.baby-description {
+
+    grid-area: description;
+
+    max-width: 600px;
+
+}
+
+
+.baby-description p {
+
+    margin: 0 0 18px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--secondary-color);
+
+}
+
+
+.baby-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+}
+
+
+.baby-tags span {
+
+    padding: 10px 15px;
+
+    background: var(--secondary-color);
+
+    color: var(--white);
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* =========================================================
+   PHOTO BACKDROPS
+========================================================= */
+
+/* =========================================================
+   PHOTO BACKDROPS
+========================================================= */
+
+.backdrop-service {
+
+    padding: 100px 8%;
+
+    background: var(--white);
+
+}
+
+
+.backdrop-title {
+
+    max-width: 900px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.backdrop-title h2 {
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 6vw, 82px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    color: var(--secondary-color);
+
+}
+
+
+.backdrop-title h2 span {
+
+    font-family: "Great Vibes", cursive;
+
+    color: var(--primary-color);
+
+}
+
+
+.backdrop-gallery {
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.25fr 0.75fr;
+
+    align-items: end;
+
+    gap: 18px;
+
+}
+
+
+.backdrop-image {
+
+    overflow: hidden;
+
+}
+
+
+.backdrop-image.large {
+
+    height: 420px;
+
+}
+
+
+.backdrop-image.small {
+
+    height: 300px;
+
+}
+
+
+.backdrop-image img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: var(--transition);
+
+}
+
+
+.backdrop-image:hover img {
+
+    transform: scale(1.04);
+
+}
+
+
+.backdrop-description {
+
+    max-width: 750px;
+
+    margin: 35px auto 0;
+
+    text-align: center;
+
+}
+
+
+.backdrop-description p {
+
+    margin: 0 auto 22px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--secondary-color);
+
+}
+
+
+.backdrop-features {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+
+.backdrop-features span {
+
+    padding: 9px 15px;
+
+    border: 1px solid rgba(90, 39, 72, 0.25);
+
+    font-size: 11px;
+
+    color: var(--secondary-color);
+
+}
+
+
+.backdrop-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: var(--transition);
+
+}
+
+
+.backdrop-image:hover img {
+
+    transform: scale(1.04);
+
+}
+
+
+.backdrop-description {
+
+    max-width: 800px;
+
+    margin: 50px auto 0;
+
+    text-align: center;
+
+}
+
+
+.backdrop-description p {
+
+    margin: 0 auto 25px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--secondary-color);
+
+}
+
+
+.backdrop-features {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+
+.backdrop-features span {
+
+    padding: 9px 15px;
+
+    border: 1px solid rgba(90, 39, 72, 0.25);
+
+    font-size: 11px;
+
+    color: var(--secondary-color);
+
+}
+
+
+/* =========================================================
+   CUSTOM THEMES
+========================================================= */
+
+.custom-service {
+
+    padding: 100px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    background: var(--secondary-color);
+
+}
+
+
+.custom-content {
+
+    padding: 20px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.custom-content h2 {
+
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 6vw, 80px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    color: var(--white);
+
+}
+
+
+.custom-content h2 span {
+
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+
+    color: var(--primary-color);
+
+}
+
+
+.custom-content p {
+
+    max-width: 600px;
+
+    margin-bottom: 18px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--white);
+
+}
+
+
+.custom-options {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+
+.custom-options div {
+
+    min-width: 130px;
+
+    padding: 18px 15px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+}
+
+
+.custom-options svg {
+
+    width: 20px;
+    height: 20px;
+
+    margin-bottom: 10px;
+
+    color: var(--primary-color);
+
+}
+
+
+.custom-options span {
+
+    display: block;
+
+    font-size: 11px;
+
+    color: var(--white);
+
+}
+
+
+.custom-image {
+
+    width: 100%;
+
+    height: 450px;
+
+    overflow: hidden;
+
+}
+
+
+.custom-image img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: var(--transition);
+
+}
+
+
+.custom-image:hover img {
+
+    transform: scale(1.03);
+
+}
+
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.styling-process {
+
+    padding: 120px 8%;
+
+    background: #FFF8FA;
+
+}
+
+
+.process-heading {
+
+    max-width: 700px;
+
+    margin-bottom: 65px;
+
+}
+
+
+.process-heading h2 {
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 5vw, 68px);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    color: var(--secondary-color);
+
+}
+
+
+.process-heading h2 span {
+
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+
+    color: var(--primary-color);
+
+}
+
+
+.process-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+}
+
+
+.process-item {
+
+    position: relative;
+
+    padding: 30px 0;
+
+    border-top: 1px solid rgba(90,39,72,0.2);
+
+}
+
+
+.process-item > span {
+
+    display: block;
+
+    margin-bottom: 30px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 18px;
+
+    color: var(--primary-color);
+
+}
+
+
+.process-item i {
+
+    width: 24px;
+    height: 24px;
+
+    margin-bottom: 20px;
+
+    color: var(--secondary-color);
+
+}
+
+
+.process-item h3 {
+
+    margin: 0 0 12px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    color: var(--secondary-color);
+
+}
+
+
+.process-item p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: var(--secondary-color);
+
+}
+
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.details-cta {
+
+    padding: 130px 20px;
+
+    background: var(--secondary-color);
+
+    text-align: center;
+
+}
+
+
+.cta-content {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+}
+
+
+.details-cta .section-label {
+
+    color: var(--primary-color);
+
+}
+
+
+.details-cta h2 {
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 6vw, 78px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    color: var(--white);
+
+}
+
+
+.details-cta h2 span {
+
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+
+    color: var(--primary-color);
+
+}
+
+
+.details-cta p {
+
+    max-width: 650px;
+
+    margin: 25px auto 30px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: var(--white);
+
+}
+
+
+.details-cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px 28px;
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    transition: var(--transition);
+
+}
+
+
+.details-cta-button:hover {
+
+    background: var(--white);
+
+    color: var(--secondary-color);
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .details-intro {
+
+    background: #1E1620;
+
+}
+
+
+body.dark-mode .details-intro h2,
+body.dark-mode .details-intro p {
+
+    color: #F8EEF3;
+
+}
+
+
+body.dark-mode .wedding-service,
+body.dark-mode .baby-service,
+body.dark-mode .styling-process {
+
+    background: #241A25;
+
+}
+
+
+body.dark-mode .service-text h2,
+body.dark-mode .service-text p,
+body.dark-mode .service-list li,
+body.dark-mode .baby-description p,
+body.dark-mode .backdrop-title h2,
+body.dark-mode .backdrop-description p,
+body.dark-mode .process-heading h2,
+body.dark-mode .process-item h3,
+body.dark-mode .process-item p {
+
+    color: #F8EEF3;
+
+}
+
+
+body.dark-mode .backdrop-service {
+
+    background: #1E1620;
+
+}
+
+
+body.dark-mode .backdrop-features span {
+
+    border-color: rgba(255,255,255,0.2);
+
+    color: #F8EEF3;
+
+}
+
+
+body.dark-mode .custom-service {
+
+    background: #241A25;
+
+}
+
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .details-hero-content,
+html[dir="rtl"] .detail-service-content,
+html[dir="rtl"] .corporate-content {
+
+    text-align: right;
+
+}
+
+
+html[dir="rtl"] .wedding-service {
+
+    direction: rtl;
+
+}
+
+
+html[dir="rtl"] .baby-service {
+
+    direction: rtl;
+
+}
+
+
+html[dir="rtl"] .custom-service {
+
+    direction: rtl;
+
+}
+
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .details-hero {
+
+        min-height: 580px;
+
+    }
+
+
+    .details-hero-content {
+
+        padding: 70px 0;
+
+    }
+
+
+    .wedding-service {
+
+        padding: 90px 6%;
+
+        gap: 50px;
+
+    }
+
+
+    .service-visual {
+
+        height: 520px;
+
+    }
+
+
+    .corporate-points {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .baby-service {
+
+        padding: 90px 6%;
+
+    }
+
+
+    .backdrop-service {
+
+    padding: 85px 6%;
+
+}
+
+
+.backdrop-gallery {
+
+    max-width: 900px;
+
+}
+
+
+.backdrop-image.large {
+
+    height: 360px;
+
+}
+
+
+.backdrop-image.small {
+
+    height: 260px;
+
+}
+
+    .custom-content {
+
+        padding: 90px 7%;
+
+    }
+
+
+    .styling-process {
+
+        padding: 90px 6%;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .details-hero {
+
+        min-height: 520px;
+
+    }
+
+
+    .details-hero-content {
+
+        width: 88%;
+
+        padding: 60px 0;
+
+    }
+
+
+    .details-hero h1 {
+
+        font-size: 52px;
+
+    }
+
+
+    .details-intro {
+
+        padding: 80px 25px;
+
+    }
+
+
+    .detail-service {
+
+        min-height: 600px;
+
+    }
+
+
+    .detail-service-content {
+
+        width: 88%;
+
+        padding: 80px 0;
+
+    }
+
+
+    .wedding-service {
+
+        grid-template-columns: 1fr;
+
+        padding: 75px 7%;
+
+    }
+
+
+    .service-visual {
+
+        height: 500px;
+
+    }
+
+
+    .service-text {
+
+        max-width: none;
+
+    }
+
+
+    .corporate-service {
+
+        min-height: 650px;
+
+    }
+
+
+    .corporate-content {
+
+        width: 88%;
+
+        padding: 90px 0;
+
+    }
+
+
+    .baby-service {
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "heading"
+        "image"
+        "description";
+
+    padding: 75px 7%;
+
+    row-gap: 35px;
+
+}
+
+
+.baby-image {
+
+    height: 450px;
+
+}
+
+
+.baby-description {
+
+    grid-column: auto;
+
+    max-width: none;
+
+}
+
+    .backdrop-service {
+
+        padding: 80px 7%;
+
+    }
+
+
+    .backdrop-gallery {
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+    }
+
+
+    .backdrop-image.large,
+    .backdrop-image.small {
+
+        height: 450px;
+
+    }
+
+
+    .custom-service {
+
+    grid-template-columns: 1fr;
+
+    padding: 75px 7%;
+
+    gap: 40px;
+
+}
+
+
+.custom-content {
+
+    padding: 0;
+
+}
+
+
+.custom-image {
+
+    height: 400px;
+
+}
+
+
+    .styling-process {
+
+        padding: 80px 7%;
+
+    }
+
+
+    .process-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 35px;
+
+    }
+
+
+    .details-cta {
+
+        padding: 90px 20px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .details-hero {
+
+        min-height: 460px;
+
+    }
+
+
+    .details-hero-content {
+
+        width: 88%;
+
+        padding: 50px 0;
+
+    }
+
+
+    .details-hero h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .details-hero p {
+
+        font-size: 14px;
+
+    }
+
+
+    .details-intro {
+
+        padding: 65px 20px;
+
+    }
+
+
+    .details-intro h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .detail-service {
+
+        min-height: 550px;
+
+    }
+
+
+    .detail-service-content {
+
+        width: 88%;
+
+        padding: 65px 0;
+
+    }
+
+
+    .detail-service-content h2,
+    .service-text h2,
+    .baby-heading h2,
+    .backdrop-title h2,
+    .custom-content h2 {
+
+        font-size: 42px;
+
+    }
+
+
+    .detail-service-content p,
+    .service-text p,
+    .baby-description p,
+    .backdrop-description p,
+    .custom-content p {
+
+        font-size: 13px;
+
+    }
+
+
+    .service-features span,
+    .baby-tags span {
+
+        font-size: 10px;
+
+        padding: 8px 11px;
+
+    }
+
+
+    .wedding-service {
+
+        padding: 60px 6%;
+
+    }
+
+
+    .service-visual {
+
+        height: 400px;
+
+    }
+
+
+    .corporate-service {
+
+        min-height: 600px;
+
+    }
+
+
+    .corporate-content {
+
+        width: 88%;
+
+        padding: 70px 0;
+
+    }
+
+
+    .corporate-points {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .baby-service {
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "heading"
+        "image"
+        "description";
+
+    padding: 60px 6%;
+
+}
+
+
+.baby-image {
+
+    height: 350px;
+
+}
+
+
+    .backdrop-service {
+
+        padding: 65px 6%;
+
+    }
+
+
+    .backdrop-image.large,
+    .backdrop-image.small {
+
+        height: 330px;
+
+    }
+
+
+   .custom-content {
+
+    padding: 0;
+
+}
+
+
+.custom-image {
+
+    height: 300px;
+
+}
+
+
+    .custom-options div {
+
+        min-width: 110px;
+
+    }
+
+
+    .styling-process {
+
+        padding: 65px 6%;
+
+    }
+
+
+    .process-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .details-cta {
+
+        padding: 70px 18px;
+
+    }
+
+
+    .details-cta h2 {
+
+        font-size: 42px;
+
+    }
+.backdrop-service {
+
+    padding: 60px 6%;
+
+}
+
+
+.backdrop-gallery {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.backdrop-image.large,
+.backdrop-image.small {
+
+    height: 280px;
+
+}
+}

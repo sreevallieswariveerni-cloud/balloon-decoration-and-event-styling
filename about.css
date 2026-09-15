@@ -1,0 +1,1703 @@
+.about-hero {
+    position: relative;
+    overflow: hidden;
+
+    /* Fit hero inside the available screen */
+    min-height: calc(100vh - var(--header-height));
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px 0;
+
+    background: #FFF8FA;
+}
+
+
+.about-hero-shape {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -220px;
+    top: -180px;
+
+    border: 1px solid
+        rgba(184,92,122,0.18);
+
+    border-radius: 50%;
+
+    animation:
+        aboutFloat 8s ease-in-out infinite;
+}
+
+
+@keyframes aboutFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+.about-hero-layout {
+    display: grid;
+
+    grid-template-columns:
+        0.9fr 1.1fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+    width: 100%;
+}
+
+
+.about-hero-content {
+    max-width: 520px;
+}
+
+
+.about-hero-content .section-tag {
+    color: var(--primary-color);
+}
+
+
+.about-hero-content h1 {
+
+    margin: 20px 0;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 68px;
+
+    line-height: 1.05;
+
+    color: var(--secondary-color);
+}
+
+
+.about-hero-content h1 span {
+
+    display: block;
+
+    color: var(--primary-color);
+
+    font-style: italic;
+}
+
+
+.about-hero-content p {
+
+    max-width: 480px;
+
+    color: var(--secondary-color);
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    opacity: 0.75;
+}
+
+
+.about-hero-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 30px;
+
+    padding-bottom: 8px;
+
+    border-bottom:
+        1px solid var(--primary-color);
+
+    color: var(--primary-color);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition:
+        gap var(--transition);
+}
+
+
+.about-hero-link:hover {
+
+    gap: 14px;
+}
+
+
+.about-hero-link svg {
+
+    width: 16px;
+    height: 16px;
+}
+
+
+.about-hero-visual {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.about-hero-image {
+    width: min(480px, 100%);
+    height: min(570px, calc(100vh - var(--header-height) - 80px));
+
+    overflow: hidden;
+
+    border-radius:
+        250px
+        250px
+        20px
+        20px;
+
+    box-shadow:
+        0 30px 70px
+        rgba(90,39,72,0.15);
+}
+
+
+.about-hero-image img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.8s ease;
+}
+
+
+.about-hero-image:hover img {
+
+    transform: scale(1.05);
+}
+
+
+.about-hero-badge {
+
+    position: absolute;
+
+    left: 0;
+    bottom: 35px;
+
+    width: 145px;
+    height: 145px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: var(--secondary-color);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 15px 35px
+        rgba(90,39,72,0.22);
+
+    animation:
+        badgeFloat 5s ease-in-out infinite;
+}
+
+
+@keyframes badgeFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+.about-hero-badge span {
+
+    color: #F48FB1;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+
+.about-hero-badge strong {
+
+    margin: 4px 0;
+
+    color: var(--white);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 30px;
+}
+
+
+.about-hero-badge small {
+
+    color: rgba(255,255,255,0.75);
+
+    font-size: 7px;
+
+    line-height: 1.5;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =========================================================
+   STORY
+========================================================= */
+
+.about-story {
+
+    padding: 120px 0;
+
+    background: var(--white);
+}
+
+
+.about-story-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        0.35fr 1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+
+.about-story-number {
+
+    align-self: stretch;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.about-story-number span {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 20px;
+
+    color: var(--primary-color);
+}
+
+
+.about-story-number div {
+
+    width: 1px;
+
+    height: 100px;
+
+    background:
+        rgba(90,39,72,0.2);
+}
+
+
+.about-story-number p {
+
+    writing-mode:
+        vertical-rl;
+
+    color: var(--secondary-color);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.7;
+}
+
+
+.about-story-content h2 {
+
+    margin-bottom: 25px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    color: var(--secondary-color);
+}
+
+
+.about-story-content h2 em {
+
+    color: var(--primary-color);
+
+    font-style: italic;
+}
+
+
+.about-story-content p {
+
+    margin-bottom: 18px;
+
+    color: var(--secondary-color);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    opacity: 0.72;
+}
+
+
+.about-story-content .story-lead {
+
+    margin-bottom: 25px;
+
+    color: var(--secondary-color);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    opacity: 1;
+}
+
+
+.about-story-image {
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius:
+        20px
+        20px
+        150px
+        20px;
+}
+
+
+.about-story-image img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.8s ease;
+}
+
+
+.about-story-image:hover img {
+
+    transform: scale(1.05);
+}
+
+
+
+/* =========================================================
+   PHILOSOPHY
+========================================================= */
+
+.about-philosophy {
+
+    padding: 110px 0;
+
+    background: var(--secondary-color);
+
+    color: var(--white);
+}
+
+
+.philosophy-heading {
+
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+.philosophy-heading .section-tag {
+
+    color: #F48FB1;
+}
+
+
+.philosophy-heading h2 {
+
+    margin-top: 15px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 48px;
+
+    color: var(--white);
+}
+
+
+.philosophy-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.2);
+}
+
+
+.philosophy-item {
+
+    min-height: 280px;
+
+    padding: 40px 35px;
+
+    border-right:
+        1px solid
+        rgba(255,255,255,0.2);
+
+    transition:
+        background 0.4s ease;
+}
+
+
+.philosophy-item:last-child {
+
+    border-right: none;
+}
+
+
+.philosophy-item:hover {
+
+    background:
+        rgba(244,143,177,0.07);
+}
+
+
+.philosophy-number {
+
+    color: #F48FB1;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+
+.philosophy-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 35px 0 18px;
+}
+
+
+.philosophy-title svg {
+
+    width: 20px;
+    height: 20px;
+
+    color: #F48FB1;
+}
+
+
+.philosophy-title h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 28px;
+
+    color: var(--white);
+}
+
+
+.philosophy-item p {
+
+    max-width: 300px;
+
+    color:
+        rgba(255,255,255,0.68);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   WHY BALLOONBLISS
+========================================================= */
+
+.about-why {
+
+    padding: 120px 0;
+
+    background: #FFF8FA;
+}
+
+
+.about-why-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items: center;
+
+    gap: 100px;
+}
+
+
+.about-why-heading {
+
+    max-width: 520px;
+}
+
+
+.about-why-heading .section-tag {
+
+    color: var(--primary-color);
+}
+
+
+.about-why-heading h2 {
+
+    margin: 18px 0;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 50px;
+
+    line-height: 1.15;
+
+    color: var(--secondary-color);
+}
+
+
+.about-why-heading h2 span {
+
+    display: block;
+
+    color: var(--primary-color);
+
+    font-style: italic;
+}
+
+
+.about-why-heading p {
+
+    max-width: 470px;
+
+    color: var(--secondary-color);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    opacity: 0.72;
+}
+
+
+.about-why-points {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+}
+
+
+.why-point {
+
+    display: grid;
+
+    grid-template-columns: 60px 1fr;
+
+    gap: 20px;
+
+    padding: 28px 0;
+
+    border-bottom:
+        1px solid
+        rgba(90,39,72,0.15);
+
+    transition:
+        padding-left var(--transition);
+}
+
+
+.why-point:first-child {
+
+    border-top:
+        1px solid
+        rgba(90,39,72,0.15);
+}
+
+
+.why-point:hover {
+
+    padding-left: 10px;
+}
+
+
+.why-point-icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid
+        rgba(184,92,122,0.4);
+
+    border-radius: 50%;
+}
+
+
+.why-point-icon svg {
+
+    width: 19px;
+    height: 19px;
+
+    color: var(--primary-color);
+}
+
+
+.why-point h3 {
+
+    margin-bottom: 7px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 21px;
+
+    color: var(--secondary-color);
+}
+
+
+.why-point p {
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    opacity: 0.68;
+}
+
+
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.about-approach {
+
+    padding: 110px 0;
+
+    background: var(--white);
+}
+
+
+.approach-heading {
+
+    max-width: 650px;
+margin: 0 auto 80px;
+    text-align: center;
+}
+
+
+.approach-heading .section-tag {
+
+    color: var(--primary-color);
+}
+
+
+.approach-heading h2 {
+
+    margin-top: 15px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    color: var(--secondary-color);
+}
+
+
+.approach-line {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.approach-line::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 29px;
+    left: 8%;
+    right: 8%;
+
+    height: 1px;
+
+    background:
+        rgba(184,92,122,0.3);
+}
+
+
+.approach-step {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.approach-dot {
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    background: var(--white);
+
+    border:
+        1px solid var(--primary-color);
+
+    border-radius: 50%;
+
+    color: var(--primary-color);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 14px;
+}
+
+
+.approach-step h3 {
+
+    margin-bottom: 10px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 22px;
+
+    color: var(--secondary-color);
+}
+
+
+.approach-step p {
+
+    max-width: 210px;
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    opacity: 0.68;
+}
+
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.about-cta {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 110px 0;
+
+    background: var(--secondary-color);
+}
+
+
+.about-cta-circle {
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -250px;
+    right: -120px;
+
+    border:
+        1px solid
+        rgba(244,143,177,0.2);
+
+    border-radius: 50%;
+
+    animation:
+        aboutFloat 8s ease-in-out infinite;
+}
+
+
+.about-cta-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 750px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.about-cta-content .section-tag {
+
+    color: #F48FB1;
+}
+
+
+.about-cta-content h2 {
+
+    margin: 18px 0;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    color: var(--white);
+}
+
+
+.about-cta-content h2 span {
+
+    color: #F48FB1;
+
+    font-style: italic;
+}
+
+
+.about-cta-content p {
+
+    max-width: 550px;
+
+    margin: 0 auto 30px;
+
+    color:
+        rgba(255,255,255,0.78);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .about-hero {
+        min-height: calc(100vh - var(--header-height));
+        padding: 35px 0;
+    }
+
+    .about-hero-layout {
+        gap: 40px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 56px;
+    }
+
+    .about-hero-image {
+        width: 400px;
+        height: min(500px, calc(100vh - var(--header-height) - 70px));
+    }
+
+
+    .about-story-grid {
+
+        grid-template-columns:
+            0.2fr 1fr 0.9fr;
+
+        gap: 35px;
+    }
+
+
+    .about-story-content h2 {
+
+        font-size: 42px;
+    }
+
+
+    .about-story-image {
+
+        height: 440px;
+    }
+
+
+    .about-why-layout {
+
+        gap: 60px;
+    }
+
+
+    .about-why-heading h2 {
+
+        font-size: 44px;
+    }
+
+
+    .philosophy-item {
+
+        padding: 35px 25px;
+    }
+
+}
+
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        min-height: auto;
+        padding: 60px 0 80px;
+    }
+
+    .about-hero-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-hero-content {
+        max-width: 100%;
+    }
+
+    .about-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .about-hero-visual {
+        justify-content: center;
+    }
+
+    .about-hero-image {
+        width: 420px;
+        height: 500px;
+    }
+
+    .about-hero-badge {
+        left: 5%;
+    }
+
+
+    .about-story {
+
+        padding: 85px 0;
+    }
+
+
+    .about-story-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .about-story-number {
+
+        display: block;
+
+        height: auto;
+    }
+
+
+    .about-story-number div {
+
+        display: none;
+    }
+
+
+    .about-story-number p {
+
+        display: inline;
+
+        writing-mode: horizontal-tb;
+
+        margin-left: 15px;
+    }
+
+
+    .about-story-content h2 {
+
+        font-size: 40px;
+    }
+
+
+    .about-story-image {
+
+        height: 430px;
+    }
+
+
+    .about-philosophy {
+
+        padding: 85px 0;
+    }
+
+
+    .philosophy-list {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .philosophy-item {
+
+        min-height: auto;
+
+        border-right: none;
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,0.2);
+    }
+
+
+    .philosophy-item:last-child {
+
+        border-bottom: none;
+    }
+
+
+    .about-why {
+
+        padding: 85px 0;
+    }
+
+
+    .about-why-layout {
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .about-why-heading h2 {
+
+        font-size: 42px;
+    }
+
+
+    .about-approach {
+
+        padding: 85px 0;
+    }
+
+
+    .approach-line {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 45px 30px;
+    }
+
+
+    .approach-line::before {
+
+        display: none;
+    }
+
+
+    .about-cta {
+
+        padding: 85px 0;
+    }
+
+
+    .about-cta-content h2 {
+
+        font-size: 44px;
+    }
+
+}
+
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .about-hero {
+
+        padding: 60px 0 75px;
+    }
+
+
+    .about-hero-content h1 {
+
+        font-size: 40px;
+    }
+
+
+    .about-hero-content p {
+
+        font-size: 13px;
+    }
+
+
+    .about-hero-image {
+
+        width: 290px;
+        height: 370px;
+
+        border-radius:
+            160px
+            160px
+            15px
+            15px;
+    }
+
+
+    .about-hero-badge {
+
+        width: 105px;
+        height: 105px;
+
+        bottom: 20px;
+    }
+
+
+    .about-hero-badge strong {
+
+        font-size: 23px;
+    }
+
+
+    .about-story {
+
+        padding: 65px 0;
+    }
+
+
+    .about-story-content h2 {
+
+        font-size: 32px;
+    }
+
+
+    .about-story-content .story-lead {
+
+        font-size: 17px;
+    }
+
+
+    .about-story-content p {
+
+        font-size: 13px;
+    }
+
+
+    .about-story-image {
+
+        height: 330px;
+
+        border-radius:
+            12px
+            12px
+            80px
+            12px;
+    }
+
+
+    .about-philosophy {
+
+        padding: 65px 0;
+    }
+
+
+    .philosophy-heading h2 {
+
+        font-size: 35px;
+    }
+
+
+    .philosophy-item {
+
+        padding: 30px 20px;
+    }
+
+
+    .philosophy-title h3 {
+
+        font-size: 24px;
+    }
+
+
+    .about-why {
+
+        padding: 65px 0;
+    }
+
+
+    .about-why-heading h2 {
+
+        font-size: 35px;
+    }
+
+
+    .why-point {
+
+        grid-template-columns:
+            45px 1fr;
+
+        gap: 15px;
+    }
+
+
+    .why-point-icon {
+
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .why-point h3 {
+
+        font-size: 18px;
+    }
+
+
+    .why-point p {
+
+        font-size: 12px;
+    }
+
+
+    .about-approach {
+
+        padding: 65px 0;
+    }
+
+
+    .approach-heading {
+
+        margin-bottom: 50px;
+    }
+
+
+    .approach-heading h2 {
+
+        font-size: 34px;
+    }
+
+
+    .approach-line {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .approach-dot {
+
+        margin-bottom: 18px;
+    }
+
+
+    .about-cta {
+
+        padding: 65px 0;
+    }
+
+
+    .about-cta-content h2 {
+
+        font-size: 35px;
+    }
+
+
+    .about-cta-content p {
+
+        font-size: 13px;
+    }
+
+}
+/* =========================================================
+   ABOUT PAGE - DARK MODE
+========================================================= */
+
+body.dark-mode .about-hero {
+    background: #1E1620;
+}
+
+body.dark-mode .about-hero-content h1 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .about-hero-content h1 span {
+    color: #FF8EAE;
+}
+
+body.dark-mode .about-hero-content p {
+    color: #E8DDE4;
+    opacity: 1;
+}
+
+body.dark-mode .about-hero-content .section-tag {
+    color: #FF8EAE;
+}
+
+body.dark-mode .about-hero-link {
+    color: #FF8EAE;
+    border-bottom-color: #FF8EAE;
+}
+
+body.dark-mode .about-hero-shape {
+    border-color: rgba(255, 142, 174, 0.18);
+}
+
+
+/* =========================
+   STORY
+========================= */
+
+body.dark-mode .about-story {
+    background: #241A25;
+}
+
+body.dark-mode .about-story-number span {
+    color: #FF8EAE;
+}
+
+body.dark-mode .about-story-number div {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .about-story-number p {
+    color: #F8EEF3;
+}
+
+body.dark-mode .about-story-content h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .about-story-content h2 em {
+    color: #FF8EAE;
+}
+
+body.dark-mode .about-story-content .story-lead {
+    color: #F8EEF3;
+}
+
+body.dark-mode .about-story-content p {
+    color: #E8DDE4;
+    opacity: 1;
+}
+
+
+/* =========================
+   PHILOSOPHY
+========================= */
+
+body.dark-mode .about-philosophy {
+    background: #1E1620;
+}
+
+body.dark-mode .philosophy-heading .section-tag {
+    color: #FF8EAE;
+}
+
+body.dark-mode .philosophy-heading h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .philosophy-item {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .philosophy-item:hover {
+    background: rgba(255, 142, 174, 0.06);
+}
+
+body.dark-mode .philosophy-number {
+    color: #FF8EAE;
+}
+
+body.dark-mode .philosophy-title svg {
+    color: #FF8EAE;
+}
+
+body.dark-mode .philosophy-title h3 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .philosophy-item p {
+    color: #E8DDE4;
+}
+
+
+/* =========================
+   WHY BALLOONBLISS
+========================= */
+
+body.dark-mode .about-why {
+    background: #241A25;
+}
+
+body.dark-mode .about-why-heading .section-tag {
+    color: #FF8EAE;
+}
+
+body.dark-mode .about-why-heading h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .about-why-heading h2 span {
+    color: #FF8EAE;
+}
+
+body.dark-mode .about-why-heading p {
+    color: #E8DDE4;
+    opacity: 1;
+}
+
+body.dark-mode .why-point {
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .why-point:first-child {
+    border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .why-point-icon {
+    border-color: rgba(255, 142, 174, 0.45);
+}
+
+body.dark-mode .why-point-icon svg {
+    color: #FF8EAE;
+}
+
+body.dark-mode .why-point h3 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .why-point p {
+    color: #E8DDE4;
+    opacity: 1;
+}
+
+
+/* =========================
+   APPROACH
+========================= */
+
+body.dark-mode .about-approach {
+    background: #1E1620;
+}
+
+body.dark-mode .approach-heading .section-tag {
+    color: #FF8EAE;
+}
+
+body.dark-mode .approach-heading h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .approach-line::before {
+    background: rgba(255, 142, 174, 0.3);
+}
+
+body.dark-mode .approach-dot {
+    background: #1E1620;
+    border-color: #FF8EAE;
+    color: #FF8EAE;
+}
+
+body.dark-mode .approach-step h3 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .approach-step p {
+    color: #E8DDE4;
+    opacity: 1;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+body.dark-mode .about-cta {
+    background: #241A25;
+}
+/* =========================================
+   ABOUT PAGE - 360px FULL WIDTH FIX
+========================================= */
+
+@media (max-width: 360px) {
+
+    .container-custom {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .about-hero,
+    .about-story,
+    .about-philosophy,
+    .about-why,
+    .about-approach,
+    .about-cta {
+        width: 100%;
+    }
+     .approach-line {
+        align-items: center;
+    }
+
+    .approach-step {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .approach-dot {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .approach-step h3,
+    .approach-step p {
+        text-align: center;
+    }
+
+}
