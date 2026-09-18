@@ -391,7 +391,18 @@ body.dark-mode .enquire-form-group textarea::placeholder {
 body.dark-mode .enquire-form-note {
     color: #8e7d88;
 }
-
+/* Dark mode calendar icon */
+body.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 1;
+    cursor: pointer;
+}
+/* Dark mode number input arrows */
+body.dark-mode input[type="number"]::-webkit-inner-spin-button,
+body.dark-mode input[type="number"]::-webkit-outer-spin-button {
+    filter: invert(1);
+    opacity: 1;
+}
 
 /* =========================================
    1024px
@@ -503,4 +514,29 @@ body.dark-mode .control-btn:hover {
     background: #c94f78;
     border-color: #c94f78;
     color: #ffffff;
+}
+/* Logo with image */
+.enquire-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.enquire-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.enquire-logo span {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.enquire-logo span span {
+    font-family: "Great Vibes", cursive;
+    color: var(--secondary-color);
 }

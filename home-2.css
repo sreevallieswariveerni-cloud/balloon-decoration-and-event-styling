@@ -1760,3 +1760,79 @@ html[dir="rtl"] .premium-hero-buttons {
     }
 
 }
+/* =========================================================
+   HOME 2 TESTIMONIAL - DARK MODE FINAL DESIGN
+========================================================= */
+
+/* Entire testimonial section */
+body.dark-mode .home2-testimonial {
+    background: #1E1620 !important;
+    color: #FFFFFF !important;
+}
+
+/* Testimonial cards - DARK */
+body.dark-mode .home2-testimonial-card {
+    background: #2A202B !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Quote mark */
+body.dark-mode .home2-testimonial-card .quote-mark {
+    color: #F48FB1 !important;
+}
+
+/* Stars */
+body.dark-mode .home2-testimonial-card .home2-stars {
+    color: #F48FB1 !important;
+}
+
+/* Testimonial paragraph */
+body.dark-mode .home2-testimonial-card blockquote {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+/* Divider line */
+body.dark-mode .home2-testimonial-card .home2-client {
+    border-top-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Avatar */
+body.dark-mode .home2-testimonial-card .client-avatar {
+    background: #FFD6E2 !important;
+    color: #5A2748 !important;
+}
+
+/* Happy Customer */
+body.dark-mode .home2-testimonial-card .client-info strong {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Birthday / Wedding / Baby Shower */
+body.dark-mode .home2-testimonial-card .client-info small {
+    color: #F4B6C8 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Client info */
+body.dark-mode .home2-testimonial-card .client-info {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+/* Section heading */
+body.dark-mode .home2-testimonial .section-heading h2 {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .home2-testimonial .section-heading p {
+    color: #E8DDE4 !important;
+}
+
+body.dark-mode .home2-testimonial .section-tag {
+    color: #F48FB1 !important;
+}

@@ -2463,3 +2463,33 @@ body.dark-mode .mobile-menu-btn {
     border-color: var(--primary-color);
     box-shadow: 0 4px 15px rgba(90, 39, 72, 0.10);
 }
+/* =========================================================
+   GLOBAL MOBILE OVERFLOW FIX
+========================================================= */
+
+html,
+body {
+    max-width: 100%;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 360px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden !important;
+    }
+
+    #header,
+    #footer {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}

@@ -1241,3 +1241,101 @@ body.dark-mode .about-cta {
     text-align: center;
   }
 }
+/* =========================================================
+   ABOUT PAGE - DARK MODE TEXT VISIBILITY FIX
+========================================================= */
+
+/* Main story section */
+body.dark-mode .about-story {
+    background-color: #1E1620 !important;
+}
+
+/* OUR STORY label */
+body.dark-mode .about-story .section-tag {
+    color: #F48FB1 !important;
+    opacity: 1 !important;
+}
+
+/* Main heading */
+body.dark-mode .about-story .story-modern-content h2 {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+/* "Decoration." pink word */
+body.dark-mode .about-story .story-modern-content h2 em {
+    color: #F48FB1 !important;
+    opacity: 1 !important;
+}
+
+/* Heading underline */
+body.dark-mode .about-story .story-heading-line {
+    background-color: #F48FB1 !important;
+}
+
+/* Main paragraph */
+body.dark-mode .about-story .story-modern-content p {
+    color: #F1E7ED !important;
+    opacity: 1 !important;
+}
+
+/* Lead paragraph */
+body.dark-mode .about-story .story-modern-content .story-modern-lead {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+/* Values section */
+body.dark-mode .about-story .story-values {
+    color: #FFFFFF !important;
+}
+
+/* Value titles */
+body.dark-mode .about-story .story-value h3 {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+/* Value descriptions */
+body.dark-mode .about-story .story-value p {
+    color: #E8DDE4 !important;
+    opacity: 1 !important;
+}
+
+/* Value icons */
+body.dark-mode .about-story .value-icon {
+    background-color: #FFD6E2 !important;
+    color: #5A2748 !important;
+}
+
+/* Button */
+body.dark-mode .about-story .story-modern-btn {
+    color: #FFFFFF !important;
+    background-color: #C94F76 !important;
+}
+
+/* Stats card */
+body.dark-mode .about-story .story-stats-card {
+    background-color: #2A202B !important;
+    border-color: rgba(255,255,255,0.12) !important;
+}
+
+/* Stats numbers */
+body.dark-mode .about-story .story-stat strong {
+    color: #FFFFFF !important;
+}
+
+/* Stats labels */
+body.dark-mode .about-story .story-stat span {
+    color: #F1DCE5 !important;
+}
+
+/* Small image text */
+body.dark-mode .about-story .small-image-text {
+    color: #FFFFFF !important;
+}
+
+/* Script text */
+body.dark-mode .about-story .story-script {
+    color: #F48FB1 !important;
+}
