@@ -1,7 +1,7 @@
 .about-hero {
   position: relative;
   overflow: hidden;
-  min-height: calc(100vh - var(--header-height));
+  min-height: 600px;
   display: flex;
   align-items: center;
   padding: 40px 0;
@@ -1338,4 +1338,150 @@ body.dark-mode .about-story .small-image-text {
 /* Script text */
 body.dark-mode .about-story .story-script {
     color: #F48FB1 !important;
+}
+/* =========================================================
+   ABOUT STORY - 360px MOBILE FIX
+========================================================= */
+
+@media (max-width: 360px) {
+
+    /* STORY SECTION */
+    .about-story {
+        width: 100%;
+        padding: 55px 0;
+        overflow: hidden;
+    }
+
+    .story-modern-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    /* LEFT IMAGE COLLAGE */
+    .story-modern-visual {
+        width: 100%;
+        min-height: 470px;
+        padding: 20px 0 65px 70px;
+        box-sizing: border-box;
+    }
+
+    .story-main-image {
+        width: 100%;
+        max-width: 230px;
+        height: 330px;
+        border-radius: 120px 120px 20px 20px;
+    }
+
+    /* STATS CARD */
+    .story-stats-card {
+        left: 0;
+        top: 35px;
+        width: 115px;
+        padding: 15px 10px;
+        box-sizing: border-box;
+    }
+
+    .story-stat {
+        padding: 10px 0;
+    }
+
+    .story-stat strong {
+        font-size: 24px;
+    }
+
+    .story-stat span {
+        font-size: 8px;
+        letter-spacing: 0.7px;
+    }
+
+    /* SMALL IMAGE */
+    .story-small-image {
+        right: 0;
+        bottom: 5px;
+        width: 145px;
+        height: 180px;
+        padding: 5px;
+    }
+
+    .small-image-text {
+        left: 10px;
+        bottom: 10px;
+        padding: 5px 7px;
+        font-size: 9px;
+    }
+
+    /* SCRIPT */
+    .story-script {
+        left: 0;
+        bottom: 0;
+        font-size: 25px;
+    }
+
+    /* RIGHT CONTENT */
+    .story-modern-content {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .story-modern-content .section-tag {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .story-modern-content h2 {
+        margin: 15px 0 20px;
+        font-size: 35px;
+        line-height: 1.1;
+    }
+
+    .story-heading-line {
+        width: 50px;
+        height: 2px;
+        margin-bottom: 22px;
+    }
+
+    .story-modern-content p,
+    .story-modern-content .story-modern-lead {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    /* VALUES */
+    .story-values {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+        padding-top: 25px;
+    }
+
+    .story-value {
+        width: 100%;
+    }
+
+    .value-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .story-value h3 {
+        font-size: 16px;
+    }
+
+    .story-value p {
+        font-size: 11px;
+    }
+
+    /* BUTTON */
+    .story-modern-btn {
+        width: 100%;
+        justify-content: center;
+        margin-top: 25px;
+        padding: 13px 18px;
+        box-sizing: border-box;
+    }
 }

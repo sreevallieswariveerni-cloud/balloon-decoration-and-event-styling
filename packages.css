@@ -437,15 +437,15 @@
 }
 
 .package-featured .package-button {
-    background: #FFFFFF;
-    color: #5A2748;
-    border-color: #FFFFFF;
-}
-
-.package-featured .package-button:hover {
     background: #B85C7A;
     color: #FFFFFF;
     border-color: #B85C7A;
+}
+
+.package-featured .package-button:hover {
+    background: #5A2748;
+    color: #FFFFFF;
+    border-color: #5A2748;
 }
 
 

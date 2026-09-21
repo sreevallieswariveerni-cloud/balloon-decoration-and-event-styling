@@ -182,8 +182,8 @@ img {
 
     font-family: "Inter", sans-serif;
 
-    font-size: 9px;
-    font-weight: 500;
+    font-size: 7px;
+    font-weight: 450;
 
     letter-spacing: 4px;
 
@@ -484,8 +484,8 @@ padding: 10px 0;
 
     font-family: "Inter", sans-serif;
 
-    font-size: 9px;
-    font-weight: 500;
+    font-size: 7px;
+    font-weight: 450;
 
     letter-spacing: 4px;
 
@@ -666,7 +666,13 @@ padding: 10px 0;
     color: var(--primary-color);
     opacity: 1;
 }
+.footer-additional-pages {
+    margin-top: 30px;
+}
 
+.footer-additional-pages .footer-title {
+    margin-bottom: 14px;
+}
 
 
 .hero-section,
@@ -1761,16 +1767,16 @@ padding: 10px 0;
     }
 
     .logo-balloon {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .logo-bliss {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .logo-tagline {
         margin-top: 6px;
-        font-size: 7px;
+        font-size: 6px;
         letter-spacing: 2px;
     }
 
@@ -2480,16 +2486,88 @@ iframe {
 
 @media (max-width: 360px) {
 
+    
     html,
     body {
         width: 100%;
         overflow-x: hidden !important;
     }
 
-    #header,
+    #header {
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+    }
+
     #footer {
         width: 100%;
         max-width: 100%;
         overflow-x: hidden;
+    }
+}
+/* =========================================================
+   FIX MOBILE MENU - 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .mobile-menu-btn {
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative;
+        z-index: 10001;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .main-navigation {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 10000;
+    }
+
+    .main-navigation.mobile-menu-open {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+}
+/* =========================================
+   768px - FULL WIDTH FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .site-header,
+    .site-footer,
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container-custom {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
