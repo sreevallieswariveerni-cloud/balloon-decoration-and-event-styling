@@ -148,11 +148,6 @@
   letter-spacing: 1px;
 }
 /* Story */
-
-/* =========================================
-   OUR STORY - MODERN EDITORIAL DESIGN
-========================================= */
-
 .about-story {
     position: relative;
     padding: 110px 0;
@@ -166,12 +161,6 @@
     align-items: center;
     gap: 80px;
 }
-
-
-/* =========================================
-   LEFT IMAGE COLLAGE
-========================================= */
-
 .story-modern-visual {
     position: relative;
     min-height: 620px;
@@ -298,11 +287,6 @@
     color: var(--primary-color);
 }
 
-
-/* =========================================
-   RIGHT CONTENT
-========================================= */
-
 .story-modern-content {
     padding: 20px 0;
 }
@@ -349,11 +333,6 @@
     line-height: 1.6;
     opacity: 1;
 }
-
-
-/* =========================================
-   VALUES
-========================================= */
 
 .story-values {
     display: grid;
@@ -403,11 +382,6 @@
     line-height: 1.6;
     opacity: 0.65;
 }
-
-
-/* =========================================
-   BUTTON
-========================================= */
 
 .story-modern-btn {
     display: inline-flex;
@@ -1109,10 +1083,6 @@ body.dark-mode .philosophy-item p {
   color: #e8dde4;
 }
 
-/* =========================
-   WHY BALLOONBLISS
-========================= */
-
 body.dark-mode .about-why {
   background: #241a25;
 }
@@ -1159,10 +1129,6 @@ body.dark-mode .why-point p {
   opacity: 1;
 }
 
-/* =========================
-   APPROACH
-========================= */
-
 body.dark-mode .about-approach {
   background: #1e1620;
 }
@@ -1193,10 +1159,6 @@ body.dark-mode .approach-step p {
   color: #e8dde4;
   opacity: 1;
 }
-
-/* =========================
-   CTA
-========================= */
 
 body.dark-mode .about-cta {
   background: #241a25;
@@ -1241,10 +1203,6 @@ body.dark-mode .about-cta {
     text-align: center;
   }
 }
-/* =========================================================
-   ABOUT PAGE - DARK MODE TEXT VISIBILITY FIX
-========================================================= */
-
 /* Main story section */
 body.dark-mode .about-story {
     background-color: #1E1620 !important;
@@ -1339,10 +1297,6 @@ body.dark-mode .about-story .small-image-text {
 body.dark-mode .about-story .story-script {
     color: #F48FB1 !important;
 }
-/* =========================================================
-   ABOUT STORY - 360px MOBILE FIX
-========================================================= */
-
 @media (max-width: 360px) {
 
     /* STORY SECTION */

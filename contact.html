@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact | BalloonBliss</title>
-        <link rel="icon" type="image/png" sizes="184x184" href="logo-image-transparent.png">
+    <link rel="icon" type="image/png" sizes="184x184" href="logo-image-transparent.png">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -16,30 +15,18 @@
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Lucide Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Contact CSS -->
     <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
 
-    <!-- Header -->
     <div id="header"></div>
 
-
-    <!-- =========================
-         CONTACT HERO
-    ========================== -->
     <section class="contact-hero">
 
         <div class="contact-hero-content">
@@ -61,12 +48,6 @@
         </div>
 
     </section>
-
-
-
-    <!-- =========================
-         CONTACT INTRO
-    ========================== -->
     <section class="contact-intro">
 
         <div class="contact-intro-inner">
@@ -89,20 +70,9 @@
         </div>
 
     </section>
-
-
-
-    <!-- =========================
-         CONTACT SECTION
-    ========================== -->
     <section class="contact-section">
 
         <div class="contact-wrapper">
-
-
-            <!-- =====================
-                 LEFT : CONTACT DETAILS
-            ====================== -->
             <div class="contact-details">
 
                 <span class="contact-small-label">
@@ -121,8 +91,6 @@
                     use our Enquire Now page.
                 </p>
 
-
-                <!-- Email -->
                 <div class="contact-detail-item">
 
                     <div class="contact-detail-icon">
@@ -141,8 +109,6 @@
 
                 </div>
 
-
-                <!-- Phone -->
                 <div class="contact-detail-item">
 
                     <div class="contact-detail-icon">
@@ -160,9 +126,6 @@
                     </div>
 
                 </div>
-
-
-                <!-- Location -->
                 <div class="contact-detail-item">
 
                     <div class="contact-detail-icon">
@@ -181,8 +144,6 @@
 
                 </div>
 
-
-                <!-- Working Hours -->
                 <div class="contact-detail-item">
 
                     <div class="contact-detail-icon">
@@ -202,8 +163,6 @@
 
                 </div>
 
-
-                <!-- Social Media -->
                 <div class="contact-social">
 
                     <span>
@@ -221,11 +180,11 @@
                         </a>
 
                         <a href="#" aria-label="YouTube">
-    <i class="fa-brands fa-youtube"></i>
-</a>
-<a href="#" aria-label="WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
 
                     </div>
 
@@ -233,11 +192,6 @@
 
             </div>
 
-
-
-            <!-- =====================
-                 RIGHT : SHORT FORM
-            ====================== -->
             <div class="contact-form-box">
 
                 <div class="form-heading">
@@ -258,158 +212,99 @@
                 </div>
 
 
-                 <form id="contactForm">
+                <form id="contactForm">
 
-    <!-- Full Name + Phone -->
-    <div class="form-row">
+                    <div class="form-row">
 
-        <div class="form-group">
-            <label for="name">Full Name</label>
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your name"
-                required>
-        </div>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
 
-        <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="+91 98765 43210"
-                required>
-        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                        </div>
 
-    </div>
+                    </div>
+                    <div class="form-row">
 
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
 
-    <!-- Email + Event Type -->
-    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eventType">Event Type</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="">Select event</option>
+                                <option>Birthday Celebration</option>
+                                <option>Wedding Decoration</option>
+                                <option>Baby Shower</option>
+                                <option>Corporate Event</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
 
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="you@example.com"
-                required>
-        </div>
+                    </div>
+                    <div class="form-row">
 
-        <div class="form-group">
-            <label for="eventType">Event Type</label>
-            <select id="eventType" name="eventType" required>
-                <option value="">Select event</option>
-                <option>Birthday Celebration</option>
-                <option>Wedding Decoration</option>
-                <option>Baby Shower</option>
-                <option>Corporate Event</option>
-                <option>Other</option>
-            </select>
-        </div>
+                        <div class="form-group">
+                            <label for="eventDate">Event Date</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                        </div>
 
-    </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" placeholder="Approx. guests" min="1"
+                                required>
+                        </div>
 
+                    </div>
+                    <div class="form-group">
+                        <label for="venue">Venue / Location</label>
+                        <input type="text" id="venue" name="venue" placeholder="Enter your event venue" required>
+                    </div>
 
-    <!-- Event Date + Guests -->
-    <div class="form-row">
+                    <div class="form-group">
+                        <label for="package">Preferred Package</label>
+                        <select id="package" name="package" required>
+                            <option value="">Select a package</option>
+                            <option>Basic</option>
+                            <option>Standard</option>
+                            <option>Premium</option>
+                            <option>Custom Package</option>
+                        </select>
+                    </div>
 
-        <div class="form-group">
-            <label for="eventDate">Event Date</label>
-            <input
-                type="date"
-                id="eventDate"
-                name="eventDate"
-                required>
-        </div>
+                    <div class="form-group">
+                        <label for="theme">Preferred Theme / Colours</label>
+                        <input type="text" id="theme" name="theme"
+                            placeholder="Example: Pink & white, floral, pastel...">
+                    </div>
 
-        <div class="form-group">
-            <label for="guests">Number of Guests</label>
-            <input
-                type="number"
-                id="guests"
-                name="guests"
-                placeholder="Approx. guests"
-                min="1"
-                required>
-        </div>
+                    <div class="form-group">
+                        <label for="message">Additional Requirements</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Tell us about your decoration ideas or special requirements..."
+                            required></textarea>
+                    </div>
 
-    </div>
+                    <button type="submit" class="contact-submit">
 
+                        Send Message
 
-    <!-- Venue -->
-    <div class="form-group">
-        <label for="venue">Venue / Location</label>
-        <input
-            type="text"
-            id="venue"
-            name="venue"
-            placeholder="Enter your event venue"
-            required>
-    </div>
+                        <i data-lucide="arrow-up-right"></i>
 
+                    </button>
 
-    <!-- Preferred Package -->
-    <div class="form-group">
-        <label for="package">Preferred Package</label>
-        <select id="package" name="package" required>
-            <option value="">Select a package</option>
-            <option>Basic</option>
-            <option>Standard</option>
-            <option>Premium</option>
-            <option>Custom Package</option>
-        </select>
-    </div>
+                    <p class="form-success" id="formSuccess">
 
+                        Thank you! Your message has been sent.
 
-    <!-- Preferred Theme / Colours -->
-    <div class="form-group">
-        <label for="theme">Preferred Theme / Colours</label>
-        <input
-            type="text"
-            id="theme"
-            name="theme"
-            placeholder="Example: Pink & white, floral, pastel...">
-    </div>
+                    </p>
 
-
-    <!-- Additional Requirements -->
-    <div class="form-group">
-        <label for="message">Additional Requirements</label>
-        <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Tell us about your decoration ideas or special requirements..."
-            required></textarea>
-    </div>
-
-
-    <!-- Submit -->
-    <button
-        type="submit"
-        class="contact-submit">
-
-        Send Message
-
-        <i data-lucide="arrow-up-right"></i>
-
-    </button>
-
-
-    <!-- Success Message -->
-    <p
-        class="form-success"
-        id="formSuccess">
-
-        Thank you! Your message has been sent.
-
-    </p>
-
-</form>
+                </form>
 
             </div>
 
@@ -417,150 +312,134 @@
 
     </section>
 
-<!-- =========================
-     MAP SECTION
-========================= -->
-<section class="contact-map-section">
+    <section class="contact-map-section">
 
-    <div class="contact-map-header">
-        <span class="section-label">FIND US</span>
+        <div class="contact-map-header">
+            <span class="section-label">FIND US</span>
 
-        <h2>
-            Come <span>Visit Us.</span>
-        </h2>
+            <h2>
+                Come <span>Visit Us.</span>
+            </h2>
 
-        <p>
-            We're based in Hyderabad and would love to connect
-            with you about your celebration.
-        </p>
-    </div>
+            <p>
+                We're based in Hyderabad and would love to connect
+                with you about your celebration.
+            </p>
+        </div>
 
-    <div class="contact-map-wrapper">
-        <iframe
-            src="https://www.google.com/maps?q=Hyderabad,Telangana,India&output=embed"
-            width="100%"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
+        <div class="contact-map-wrapper">
+            <iframe src="https://www.google.com/maps?q=Hyderabad,Telangana,India&output=embed" width="100%" height="450"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
 
-</section>
+    </section>
 
+    <section class="contact-faq-section">
 
-<!-- =========================
-     FAQ SECTION
-========================= -->
-<section class="contact-faq-section">
+        <div class="contact-faq-header">
 
-    <div class="contact-faq-header">
+            <span class="section-label">
+                FAQ
+            </span>
 
-        <span class="section-label">
-            FAQ
-        </span>
+            <h2>
+                Frequently Asked <span>Questions.</span>
+            </h2>
 
-        <h2>
-            Frequently Asked <span>Questions.</span>
-        </h2>
+            <p>
+                Here are some common questions about our decoration
+                services and event planning.
+            </p>
 
-        <p>
-            Here are some common questions about our decoration
-            services and event planning.
-        </p>
-
-    </div>
+        </div>
 
 
-    <div class="contact-faq-list">
+        <div class="contact-faq-list">
 
-        <details class="contact-faq-item">
-            <summary>
-                What types of events do you decorate?
-                <span class="faq-icon">+</span>
-            </summary>
+            <details class="contact-faq-item">
+                <summary>
+                    What types of events do you decorate?
+                    <span class="faq-icon">+</span>
+                </summary>
 
-            <div class="faq-answer">
-                <p>
-                    We provide decoration services for birthdays,
-                    weddings, baby showers, corporate events,
-                    parties and other special celebrations.
-                </p>
-            </div>
-        </details>
-
-
-        <details class="contact-faq-item">
-            <summary>
-                How early should I book my event?
-                <span class="faq-icon">+</span>
-            </summary>
-
-            <div class="faq-answer">
-                <p>
-                    We recommend booking as early as possible,
-                    especially for weddings and large events,
-                    so we can plan your decoration requirements properly.
-                </p>
-            </div>
-        </details>
+                <div class="faq-answer">
+                    <p>
+                        We provide decoration services for birthdays,
+                        weddings, baby showers, corporate events,
+                        parties and other special celebrations.
+                    </p>
+                </div>
+            </details>
 
 
-        <details class="contact-faq-item">
-            <summary>
-                Can I customize a decoration package?
-                <span class="faq-icon">+</span>
-            </summary>
+            <details class="contact-faq-item">
+                <summary>
+                    How early should I book my event?
+                    <span class="faq-icon">+</span>
+                </summary>
 
-            <div class="faq-answer">
-                <p>
-                    Yes. Our packages can be customized according
-                    to your event theme, venue, decoration style
-                    and specific requirements.
-                </p>
-            </div>
-        </details>
-
-
-        <details class="contact-faq-item">
-            <summary>
-                Do you provide balloon decorations?
-                <span class="faq-icon">+</span>
-            </summary>
-
-            <div class="faq-answer">
-                <p>
-                    Yes. We offer balloon arches, garlands,
-                    themed balloon styling, backdrops and
-                    custom balloon installations.
-                </p>
-            </div>
-        </details>
+                <div class="faq-answer">
+                    <p>
+                        We recommend booking as early as possible,
+                        especially for weddings and large events,
+                        so we can plan your decoration requirements properly.
+                    </p>
+                </div>
+            </details>
 
 
-        <details class="contact-faq-item">
-            <summary>
-                How can I get a quote?
-                <span class="faq-icon">+</span>
-            </summary>
+            <details class="contact-faq-item">
+                <summary>
+                    Can I customize a decoration package?
+                    <span class="faq-icon">+</span>
+                </summary>
 
-            <div class="faq-answer">
-                <p>
-                    You can contact us through the form on this page
-                    or use the Enquire Now page to provide your event
-                    date, venue, guest count and decoration requirements.
-                </p>
-            </div>
-        </details>
+                <div class="faq-answer">
+                    <p>
+                        Yes. Our packages can be customized according
+                        to your event theme, venue, decoration style
+                        and specific requirements.
+                    </p>
+                </div>
+            </details>
 
-    </div>
 
-</section>
+            <details class="contact-faq-item">
+                <summary>
+                    Do you provide balloon decorations?
+                    <span class="faq-icon">+</span>
+                </summary>
 
-    <!-- =========================
-         ENQUIRE CTA
-    ========================== -->
+                <div class="faq-answer">
+                    <p>
+                        Yes. We offer balloon arches, garlands,
+                        themed balloon styling, backdrops and
+                        custom balloon installations.
+                    </p>
+                </div>
+            </details>
+
+
+            <details class="contact-faq-item">
+                <summary>
+                    How can I get a quote?
+                    <span class="faq-icon">+</span>
+                </summary>
+
+                <div class="faq-answer">
+                    <p>
+                        You can contact us through the form on this page
+                        or use the Enquire Now page to provide your event
+                        date, venue, guest count and decoration requirements.
+                    </p>
+                </div>
+            </details>
+
+        </div>
+
+    </section>
+
     <section class="assessment-section">
 
         <div class="assessment-content">
@@ -581,9 +460,7 @@
                 decoration ideas.
             </p>
 
-            <a
-                href="enquire-now.html"
-                class="assessment-button">
+            <a href="enquire-now.html" class="assessment-button">
 
                 Enquire Now
 
@@ -595,18 +472,10 @@
 
     </section>
 
-
-
-    <!-- Footer -->
     <div id="footer"></div>
 
-
-
-    <!-- Main JS -->
     <script src="main.js"></script>
 
-
-    <!-- Contact Form JS -->
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {

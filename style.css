@@ -226,10 +226,6 @@ padding: 10px 0;
     transition: color var(--transition);
 }
 
-
-/* Navigation underline */
-
-/* Navigation underline */
 .nav-link::after {
     content: "";
 
@@ -1177,10 +1173,6 @@ padding: 10px 0;
 }
 
 
-/* =========================================================
-   TESTIMONIALS
-========================================================= */
-
 .testimonials-section {
     background-color: var(--white);
 }
@@ -1268,11 +1260,6 @@ padding: 10px 0;
     opacity: 0.70;
 }
 
-
-/* =========================================================
-   FINAL CTA
-========================================================= */
-
 .final-cta-section {
     background-color: var(--secondary-color);
 
@@ -1327,16 +1314,6 @@ padding: 10px 0;
 
     border-color: var(--white);
 }
-/* =========================================================
-   RESPONSIVE DESIGN
-   ONLY: 1024px / 768px / 360px
-   Header + Footer + Index/Home
-========================================================= */
-
-
-/* =========================================================
-   1024px
-========================================================= */
 
 @media (max-width: 1024px) {
 
@@ -1441,10 +1418,6 @@ padding: 10px 0;
     }
 }
 
-
-/* =========================================================
-   768px
-========================================================= */
 
 @media (max-width: 768px) {
 
@@ -1736,11 +1709,6 @@ padding: 10px 0;
     }
     
 }
-
-
-/* =========================================================
-   360px
-========================================================= */
 
 @media (max-width: 360px) {
 
@@ -2185,8 +2153,6 @@ body.dark-mode .dropdown-menu a:hover {
 }
 
 
-/* Hero */
-
 body.dark-mode .hero-section::before {
     background: linear-gradient(
         90deg,
@@ -2205,9 +2171,6 @@ body.dark-mode .hero-text p {
     color: var(--dark-muted-text);
 }
 
-
-/* Secondary buttons */
-
 body.dark-mode .btn-secondary {
     background-color: transparent;
     color: var(--dark-text);
@@ -2220,9 +2183,6 @@ body.dark-mode .btn-secondary:hover {
     border-color: var(--dark-text);
 }
 
-
-/* White sections */
-
 body.dark-mode .services-section,
 body.dark-mode .about-preview-section,
 body.dark-mode .testimonials-section {
@@ -2230,15 +2190,10 @@ body.dark-mode .testimonials-section {
 }
 
 
-/* Light sections */
-
 body.dark-mode .why-choose-section,
 body.dark-mode .gallery-section {
     background-color: var(--dark-surface);
 }
-
-
-/* Cards */
 
 body.dark-mode .service-card,
 body.dark-mode .testimonial-card {
@@ -2246,8 +2201,6 @@ body.dark-mode .testimonial-card {
     border-color: rgba(255, 255, 255, 0.10);
 }
 
-
-/* Card / section text */
 
 body.dark-mode .service-content p,
 body.dark-mode .feature-item p,
@@ -2257,8 +2210,6 @@ body.dark-mode .section-heading p {
     color: var(--dark-muted-text);
 }
 
-
-/* Testimonials author text */
 
 body.dark-mode .testimonial-author h3 {
     color: var(--dark-text);
@@ -2273,9 +2224,6 @@ body.dark-mode .testimonial-author {
     border-top-color: rgba(255, 255, 255, 0.12);
 }
 
-
-/* Gallery filters */
-
 body.dark-mode .filter-btn {
     background-color: var(--dark-card);
     color: var(--dark-text);
@@ -2289,8 +2237,6 @@ body.dark-mode .filter-btn.active {
     color: var(--dark-text);
 }
 
-
-/* Footer */
 
 body.dark-mode .site-footer {
     background-color: var(--dark-surface);
@@ -2307,8 +2253,6 @@ body.dark-mode .footer-legal a {
 }
 
 
-/* Footer logo — only "Balloon" and tagline become white in dark mode */
-
 body.dark-mode .footer-logo .logo-balloon {
     color: var(--dark-text);
 }
@@ -2316,9 +2260,6 @@ body.dark-mode .footer-logo .logo-balloon {
 body.dark-mode .footer-logo .logo-tagline {
     color: var(--dark-text);
 }
-
-
-/* Footer social icons */
 
 body.dark-mode .footer-social a {
     color: var(--dark-text);
@@ -2330,37 +2271,24 @@ body.dark-mode .footer-social a:hover {
     border-color: var(--primary-color);
 }
 
-
-/* Footer bottom */
-
 body.dark-mode .footer-bottom {
     border-top-color: rgba(255, 255, 255, 0.12);
 }
 
-/* =========================================================
-   RTL MODE
-========================================================= */
 
 html[dir="rtl"] {
     direction: rtl;
 }
-
-
-/* Navigation */
 
 html[dir="rtl"] .nav-list {
     direction: rtl;
 }
 
 
-/* Header */
-
 html[dir="rtl"] .header-wrapper {
     direction: rtl;
 }
 
-
-/* Dropdown */
 
 html[dir="rtl"] .dropdown-menu {
     left: auto;
@@ -2373,24 +2301,15 @@ html[dir="rtl"] .nav-dropdown:hover .dropdown-menu {
 }
 
 
-/* Buttons / icons */
-
 html[dir="rtl"] .service-link {
     flex-direction: row-reverse;
 }
 
 
-/* Footer */
-
 html[dir="rtl"] .footer-grid,
 html[dir="rtl"] .footer-bottom-wrapper {
     direction: rtl;
 }
-/* =========================================================
-   RTL FIXES - HOME PAGE
-========================================================= */
-
-/* Keep logo text order as BalloonBliss in RTL */
 
 html[dir="rtl"] .logo-main {
     direction: ltr;
@@ -2401,8 +2320,6 @@ html[dir="rtl"] .logo-bliss {
     direction: ltr;
 }
 
-
-/* Keep Hero content on the left side in RTL */
 
 html[dir="rtl"] .hero-content {
     direction: ltr;
@@ -2432,7 +2349,6 @@ body.dark-mode .mobile-menu-btn {
     border-color: rgba(255, 255, 255, 0.25);
 
 }
-/* MOBILE ENQUIRE NOW BUTTON */
 
 .mobile-enquire-item {
     display: none;
@@ -2458,9 +2374,6 @@ body.dark-mode .mobile-menu-btn {
     }
 
 }
-/* =========================================
-   CTA BUTTON HOVER - ALL PAGES
-========================================= */
 
 .final-cta-content .btn-primary:hover,
 .home2-final-content .btn-primary:hover,
@@ -2480,7 +2393,7 @@ body.dark-mode .mobile-menu-btn {
 
     box-shadow: none !important;
 }
-/* Testimonial Card Hover Effect */
+
 .testimonial-card {
     border: 1px solid rgba(90, 39, 72, 0.12);
     transition: border-color 0.3s ease,
@@ -2491,10 +2404,6 @@ body.dark-mode .mobile-menu-btn {
     border-color: var(--primary-color);
     box-shadow: 0 4px 15px rgba(90, 39, 72, 0.10);
 }
-/* =========================================================
-   GLOBAL MOBILE OVERFLOW FIX
-========================================================= */
-
 html,
 body {
     max-width: 100%;
@@ -2505,11 +2414,6 @@ video,
 iframe {
     max-width: 100%;
 }
-
-
-/* =========================================================
-   FIX MOBILE MENU - 360px
-========================================================= */
 
 @media (max-width: 360px) {
 
@@ -2540,10 +2444,6 @@ iframe {
     }
 
 }
-/* =========================================
-   768px - FULL WIDTH FIX
-========================================= */
-
 @media (max-width: 768px) {
 
     html,
@@ -2573,10 +2473,6 @@ iframe {
         box-sizing: border-box;
     }
 }
-/* =========================================================
-   STICKY HEADER FIX - ALL SCREEN SIZES
-========================================================= */
-
 html,
 body {
     overflow-x: clip;
@@ -2608,31 +2504,3 @@ body {
     }
 
 }
-/* =========================================
-   FOOTER BOTTOM - CENTER ALIGNMENT
-========================================= */
-/* 
-.footer-bottom-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    text-align: center;
-}
-
-.copyright {
-    margin: 0;
-}
-
-.footer-legal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    margin: 0;
-}
-
-.footer-legal a {
-    text-decoration: none;
-} */

@@ -1,12 +1,3 @@
-/* =========================================================
-   CONTACT PAGE
-========================================================= */
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
 .contact-hero {
 
     min-height: 620px;
@@ -109,12 +100,6 @@
 
 }
 
-
-
-/* =========================================================
-   INTRO
-========================================================= */
-
 .contact-intro {
 
     padding: 110px 0 70px;
@@ -196,13 +181,6 @@
     color: var(--secondary-color);
 
 }
-
-
-
-/* =========================================================
-   MAIN CONTACT SECTION
-========================================================= */
-
 .contact-section {
 
     padding: 70px 0 120px;
@@ -228,12 +206,6 @@
     align-items: start;
 
 }
-
-
-
-/* =========================================================
-   CONTACT DETAILS
-========================================================= */
 
 .contact-details {
 
@@ -304,13 +276,6 @@
     color: var(--secondary-color);
 
 }
-
-
-
-/* =========================================================
-   CONTACT DETAIL ITEM
-========================================================= */
-
 .contact-detail-item {
 
     display: flex;
@@ -404,12 +369,6 @@
 
 }
 
-
-
-/* =========================================================
-   SOCIAL
-========================================================= */
-
 .contact-social {
 
     margin-top: 38px;
@@ -478,12 +437,6 @@
 
 }
 
-
-
-/* =========================================================
-   CONTACT FORM BOX
-========================================================= */
-
 .contact-form-box {
 
     padding: 38px;
@@ -550,12 +503,6 @@
     color: var(--secondary-color);
 
 }
-
-
-
-/* =========================================================
-   FORM
-========================================================= */
 
 .form-row {
 
@@ -647,12 +594,6 @@
 
 }
 
-
-
-/* =========================================================
-   SUBMIT BUTTON
-========================================================= */
-
 .contact-submit {
 
     width: 100%;
@@ -703,12 +644,6 @@
 
 }
 
-
-
-/* =========================================================
-   SUCCESS MESSAGE
-========================================================= */
-
 .form-success {
 
     display: none;
@@ -726,13 +661,6 @@
     font-size: 13px;
 
 }
-
-
-
-/* =========================================================
-   BOTTOM ENQUIRE CTA
-========================================================= */
-
 .assessment-section {
 
     padding: 110px 20px;
@@ -841,12 +769,6 @@
     height: 17px;
 
 }
-
-
-
-/* =========================================================
-   DARK MODE
-========================================================= */
 
 body.dark-mode .contact-hero {
 
@@ -995,12 +917,6 @@ body.dark-mode .assessment-content p {
 
 }
 
-
-
-/* =========================================================
-   RTL
-========================================================= */
-
 html[dir="rtl"] .contact-wrapper {
 
     direction: rtl;
@@ -1020,13 +936,6 @@ html[dir="rtl"] .contact-social-links {
     justify-content: flex-start;
 
 }
-
-
-
-/* =========================================================
-   1024px
-========================================================= */
-
 @media (max-width: 1024px) {
 
     .contact-hero {
@@ -1064,12 +973,6 @@ html[dir="rtl"] .contact-social-links {
     }
 
 }
-
-
-
-/* =========================================================
-   768px
-========================================================= */
 
 @media (max-width: 768px) {
 
@@ -1149,12 +1052,6 @@ html[dir="rtl"] .contact-social-links {
     }
 
 }
-
-
-
-/* =========================================================
-   360px
-========================================================= */
 
 @media (max-width: 360px) {
 
@@ -1289,10 +1186,6 @@ html[dir="rtl"] .contact-social-links {
     }
 
 }
-/* =========================================================
-   MAP SECTION
-========================================================= */
-
 .contact-map-section {
     padding: 100px 20px;
     background: var(--white);
@@ -1343,10 +1236,6 @@ html[dir="rtl"] .contact-social-links {
     height: 100%;
 }
 
-
-/* =========================================================
-   FAQ SECTION
-========================================================= */
 
 .contact-faq-section {
     padding: 100px 20px;
@@ -1456,10 +1345,6 @@ html[dir="rtl"] .contact-social-links {
 }
 
 
-/* =========================================================
-   DARK MODE - MAP & FAQ
-========================================================= */
-
 body.dark-mode .contact-map-section {
     background: #1E1620;
 }
@@ -1492,15 +1377,10 @@ body.dark-mode .contact-faq-item summary,
 body.dark-mode .faq-answer p {
     color: #F8EEF3;
 }
-/* =========================================================
-   RTL CONTACT PAGE FIX
-========================================================= */
 
 html[dir="rtl"] .contact-wrapper {
     direction: rtl;
 }
-
-/* Contact details: icon should be on RIGHT */
 html[dir="rtl"] .contact-detail-item {
     direction: rtl;
     flex-direction: row;
@@ -1510,7 +1390,6 @@ html[dir="rtl"] .contact-detail-item > div:last-child {
     text-align: right;
 }
 
-/* Contact heading & description */
 html[dir="rtl"] .contact-details {
     direction: rtl;
     text-align: right;
@@ -1521,7 +1400,6 @@ html[dir="rtl"] .contact-description {
     text-align: right;
 }
 
-/* Social icons */
 html[dir="rtl"] .contact-social {
     text-align: right;
 }
@@ -1531,7 +1409,6 @@ html[dir="rtl"] .contact-social-links {
     direction: rtl;
 }
 
-/* FORM */
 html[dir="rtl"] .contact-form-box {
     direction: rtl;
     text-align: right;
@@ -1556,18 +1433,14 @@ html[dir="rtl"] .form-group select {
     text-align: right;
 }
 
-/* Placeholder */
 html[dir="rtl"] .form-group input::placeholder,
 html[dir="rtl"] .form-group textarea::placeholder {
     text-align: right;
 }
-
-/* Submit button */
 html[dir="rtl"] .contact-submit {
     direction: rtl;
 }
 
-/* MAP + FAQ */
 html[dir="rtl"] .contact-map-header,
 html[dir="rtl"] .contact-faq-header {
     direction: rtl;
