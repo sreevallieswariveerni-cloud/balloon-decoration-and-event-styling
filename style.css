@@ -45,7 +45,7 @@ body {
     color: var(--secondary-color);
     background-color: var(--white);
 
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 h1,
@@ -1954,13 +1954,35 @@ padding: 10px 0;
     }
 
     .footer-bottom-wrapper {
-        align-items: center;
-        text-align: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+}
 
-    .footer-legal {
-        justify-content: center;
-    }
+.copyright {
+    margin: 0;
+    text-align: center;
+}
+
+.footer-legal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    margin: 0;
+    width: 100%;
+}
+/* CENTER SOCIAL ICONS - ONLY 360px */
+
+.footer-about .footer-social {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
     /* CENTER FOOTER SECTIONS - ONLY 360px */
 
 .footer-grid > .footer-column:not(.footer-about) {
@@ -2484,27 +2506,7 @@ iframe {
     max-width: 100%;
 }
 
-@media (max-width: 360px) {
 
-    
-    html,
-    body {
-        width: 100%;
-        overflow-x: hidden !important;
-    }
-
-    #header {
-        width: 100%;
-        max-width: 100%;
-        overflow: visible;
-    }
-
-    #footer {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-}
 /* =========================================================
    FIX MOBILE MENU - 360px
 ========================================================= */
@@ -2571,3 +2573,66 @@ iframe {
         box-sizing: border-box;
     }
 }
+/* =========================================================
+   STICKY HEADER FIX - ALL SCREEN SIZES
+========================================================= */
+
+html,
+body {
+    overflow-x: clip;
+}
+
+#header {
+    position: sticky !important;
+    top: 0 !important;
+    width: 100%;
+    z-index: 99999 !important;
+}
+
+.site-header {
+    position: relative;
+    width: 100%;
+    z-index: 99999;
+}
+@media (max-width: 768px) {
+
+    #header {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 99999 !important;
+    }
+
+    .site-header {
+        position: relative;
+        z-index: 99999;
+    }
+
+}
+/* =========================================
+   FOOTER BOTTOM - CENTER ALIGNMENT
+========================================= */
+/* 
+.footer-bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+}
+
+.footer-legal a {
+    text-decoration: none;
+} */

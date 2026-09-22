@@ -1492,3 +1492,96 @@ body.dark-mode .contact-faq-item summary,
 body.dark-mode .faq-answer p {
     color: #F8EEF3;
 }
+/* =========================================================
+   RTL CONTACT PAGE FIX
+========================================================= */
+
+html[dir="rtl"] .contact-wrapper {
+    direction: rtl;
+}
+
+/* Contact details: icon should be on RIGHT */
+html[dir="rtl"] .contact-detail-item {
+    direction: rtl;
+    flex-direction: row;
+}
+
+html[dir="rtl"] .contact-detail-item > div:last-child {
+    text-align: right;
+}
+
+/* Contact heading & description */
+html[dir="rtl"] .contact-details {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .contact-details h2,
+html[dir="rtl"] .contact-description {
+    text-align: right;
+}
+
+/* Social icons */
+html[dir="rtl"] .contact-social {
+    text-align: right;
+}
+
+html[dir="rtl"] .contact-social-links {
+    justify-content: flex-start;
+    direction: rtl;
+}
+
+/* FORM */
+html[dir="rtl"] .contact-form-box {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .form-heading {
+    text-align: right;
+}
+
+html[dir="rtl"] .form-group {
+    text-align: right;
+}
+
+html[dir="rtl"] .form-group label {
+    text-align: right;
+}
+
+html[dir="rtl"] .form-group input,
+html[dir="rtl"] .form-group textarea,
+html[dir="rtl"] .form-group select {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Placeholder */
+html[dir="rtl"] .form-group input::placeholder,
+html[dir="rtl"] .form-group textarea::placeholder {
+    text-align: right;
+}
+
+/* Submit button */
+html[dir="rtl"] .contact-submit {
+    direction: rtl;
+}
+
+/* MAP + FAQ */
+html[dir="rtl"] .contact-map-header,
+html[dir="rtl"] .contact-faq-header {
+    direction: rtl;
+}
+
+html[dir="rtl"] .contact-faq-item {
+    direction: rtl;
+}
+
+html[dir="rtl"] .contact-faq-item summary {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .faq-answer {
+    text-align: right;
+}
