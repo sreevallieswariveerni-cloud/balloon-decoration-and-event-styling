@@ -397,17 +397,17 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border-radius: 8px;
 
     width: 100%;
 
     margin-top: auto;
     padding: 15px 20px;
 
-    background: #5A2748;
-    color: #FFFFFF;
+    background: transparent;
+    color: var(--secondary-color);
 
     border: 1px solid #5A2748;
+    border-radius: 8px;
 
     font-family: "Inter", sans-serif;
     font-size: 13px;
@@ -418,9 +418,8 @@
     transition:
         background 0.3s ease,
         color 0.3s ease,
-        transform 0.3s ease;
+        border-color 0.3s ease;
 }
-
 .package-button i {
     width: 16px;
     height: 16px;
@@ -429,8 +428,9 @@
 }
 
 .package-button:hover {
-    background: #B85C7A;
+    background: var(--secondary-color);
     border-color: #B85C7A;
+    color: white;
 }
 
 .package-button:hover i {

@@ -60,9 +60,6 @@ function setActiveNav() {
         .split("/")
         .pop()
         .toLowerCase();
-
-
-    // If no page name, treat it as index.html
     if (currentPage === "") {
         currentPage = "index.html";
     }
@@ -71,16 +68,12 @@ function setActiveNav() {
     // Get all navigation links
     const navLinks = document.querySelectorAll(".nav-link");
 
-
-    // Remove active class from all links
     navLinks.forEach(link => {
 
         link.classList.remove("active");
 
     });
 
-
-    // Find matching page
     navLinks.forEach(link => {
 
         const href = link.getAttribute("href");
@@ -278,8 +271,6 @@ function initMobileMenu() {
 
             }
 
-            // Home text click -> index.html
-            // No preventDefault here
         });
     }
 

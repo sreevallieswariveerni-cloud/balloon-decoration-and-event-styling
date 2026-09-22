@@ -294,10 +294,6 @@ body {
 }
 
 
-/* =========================================
-   RTL MODE
-========================================= */
-
 body.rtl-mode {
     direction: rtl;
 }
@@ -319,11 +315,6 @@ body.rtl-mode .enquire-controls {
 body.rtl-mode .enquire-form-row {
     direction: rtl;
 }
-
-
-/* =========================================
-   DARK MODE
-========================================= */
 
 body.dark-mode {
     background: #1e1620;
@@ -539,4 +530,74 @@ body.dark-mode .control-btn:hover {
 .enquire-logo span span {
     font-family: "Great Vibes", cursive;
     color: var(--secondary-color);
+}
+/* =========================================
+   ENQUIRE PAGE LOGO
+========================================= */
+
+.enquire-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.enquire-logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.enquire-logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.enquire-brand-name {
+    display: flex;
+    align-items: baseline;
+    line-height: 1;
+}
+
+.enquire-brand-name span {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #5A2748;
+}
+
+.enquire-brand-name em {
+    font-family: "Great Vibes", cursive;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    color: #C94F78;
+}
+
+.enquire-logo-text small {
+    margin-top: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #C94F78;
+}
+
+
+/* =========================================
+   DARK MODE LOGO
+========================================= */
+
+body.dark-mode .enquire-brand-name span {
+    color: #FFFFFF;
+}
+
+body.dark-mode .enquire-brand-name em {
+    color: #E17B9B;
+}
+
+body.dark-mode .enquire-logo-text small {
+    color: white;
 }
